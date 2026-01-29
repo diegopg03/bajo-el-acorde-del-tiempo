@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-Orden: Bajo el Acorde del Tiempo | Novela de Realismo y Ficción Temporal</title>
+    <meta name="description" content="Pre-ordena la novela de Sánchez Diego Gabriel que fusiona realismo mágico, música y los secretos de Huichapan. Una historia donde el tiempo se detiene y la música sobrevive al olvido.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.bajoelacordedeltiempo.com/preorden">
+    <meta property="og:title" content="Bajo el Acorde del Tiempo - Novela de Sánchez Diego Gabriel">
+    <meta property="og:description" content="Una historia donde la música es la única que sobrevive al olvido. Pre-ordena ahora en Amazon.">
+    <meta property="og:image" content="https://www.bajoelacordedeltiempo.com/assets/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.bajoelacordedeltiempo.com/preorden">
+    <meta property="twitter:title" content="Pre-Orden: Bajo el Acorde del Tiempo">
+    <meta property="twitter:description" content="Novela que fusiona realismo mágico, música y los secretos de Huichapan. Disponible en Amazon.">
+    <meta property="twitter:image" content="https://www.bajoelacordedeltiempo.com/assets/twitter-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #1a1a2e;
+            --secondary-color: #c9a96e;
+            --accent-color: #8b4513;
+            --text-color: #333333;
+            --light-bg: #f8f5f0;
+            --white: #ffffff;
+            --danger: #dc3545;
+            --success: #28a745;
+            --amazon-orange: #ff9900;
+            --font-heading: 'Crimson Text', serif;
+            --font-body: 'Inter', sans-serif;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: var(--font-body);
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            line-height: 1.2;
+        }
+        
+        h2 {
+            font-size: 2.2rem;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-top: 3rem;
+        }
+        
+        h3 {
+            font-size: 1.6rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: var(--white);
+        }
+        
+        .cta-header {
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .cta-header:hover {
+            background-color: #e0c070;
+            transform: translateY(-2px);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(26, 26, 46, 0.85), rgba(26, 26, 46, 0.9)), 
+                        url('https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070') center/cover no-repeat;
+            color: var(--white);
+            padding: 5rem 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            color: var(--white);
+            font-size: 3.2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .hero h2 {
+            color: var(--secondary-color);
+            border: none;
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+        
+        .cta-buttons {
+            margin: 2.5rem 0;
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn-primary, .btn-secondary, .btn-amazon {
+            padding: 1rem 2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            transition: all 0.3s;
+        }
+        
+        .btn-primary {
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            font-size: 1.1rem;
+        }
+        
+        .btn-primary:hover {
+            background-color: #e0c070;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--white);
+            border: 2px solid var(--secondary-color);
+        }
+        
+        .btn-secondary:hover {
+            background-color: rgba(201, 169, 110, 0.1);
+        }
+        
+        .btn-amazon {
+            background-color: var(--amazon-orange);
+            color: var(--primary-color);
+            border: none;
+        }
+        
+        .btn-amazon:hover {
+            background-color: #ffad33;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        .trust-badges {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+        
+        .trust-badges span {
+            background-color: rgba(255,255,255,0.1);
+            padding: 0.8rem 1.2rem;
+            border-radius: 4px;
+            border-left: 3px solid var(--secondary-color);
+        }
+        
+        /* Main Content */
+        main {
+            padding: 4rem 0;
+        }
+        
+        section {
+            margin-bottom: 4rem;
+        }
+        
+        /* About Book */
+        .book-intro {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            margin-top: 2rem;
+        }
+        
+        .book-cover {
+            text-align: center;
+        }
+        
+        .book-cover-img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .quote {
+            font-size: 1.5rem;
+            font-style: italic;
+            text-align: center;
+            margin: 2rem 0;
+            padding: 2rem;
+            background-color: var(--white);
+            border-radius: 8px;
+            border-left: 5px solid var(--secondary-color);
+        }
+        
+        .quote-author {
+            display: block;
+            margin-top: 1rem;
+            font-style: normal;
+            font-size: 1rem;
+            color: var(--accent-color);
+        }
+        
+        /* Synopsis */
+        .synopsis-section {
+            background-color: var(--white);
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+        
+        .synopsis-section p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        
+        .keywords {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .keyword-tag {
+            background-color: var(--light-bg);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            border: 1px solid #ddd;
+        }
+        
+        .music-tag { border-left: 4px solid #4a90e2; }
+        .culture-tag { border-left: 4px solid #7b68ee; }
+        .philosophy-tag { border-left: 4px solid #20b2aa; }
+        .mexico-tag { border-left: 4px solid #cd853f; }
+        
+        /* About Author */
+        .author-section {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 3rem;
+            align-items: center;
+            background-color: var(--white);
+            padding: 3rem;
+            border-radius: 12px;
+        }
+        
+        .author-photo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--secondary-color);
+            margin: 0 auto;
+            display: block;
+        }
+        
+        .author-info h3 {
+            color: var(--secondary-color);
+        }
+        
+        .author-real-name {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+        
+        /* Playlist Bonus */
+        .playlist-section {
+            text-align: center;
+            padding: 3rem;
+            background: linear-gradient(135deg, var(--primary-color), #2a2a3e);
+            color: white;
+            border-radius: 12px;
+        }
+        
+        .playlist-section h2 {
+            color: white;
+            border: none;
+        }
+        
+        .playlist-icon {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .playlist-description {
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            font-size: 1.1rem;
+        }
+        
+        .spotify-button {
+            display: inline-block;
+            background-color: #1DB954;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .spotify-button:hover {
+            background-color: #1ed760;
+            transform: scale(1.05);
+        }
+        
+        /* Pricing */
+        .pricing-section {
+            background-color: var(--white);
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-top: 4rem;
+        }
+        
+        .deadline {
+            text-align: center;
+            background-color: rgba(40, 167, 69, 0.1);
+            padding: 1rem;
+            border-radius: 4px;
+            margin: 1rem 0 2rem;
+            font-weight: 600;
+            border-left: 4px solid var(--success);
+        }
+        
+        .pricing-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .pricing-card {
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 2rem;
+            position: relative;
+            transition: all 0.3s;
+        }
+        
+        .pricing-card:hover {
+            border-color: var(--secondary-color);
+            transform: translateY(-5px);
+        }
+        
+        .pricing-card.popular {
+            border-color: var(--secondary-color);
+            transform: scale(1.05);
+        }
+        
+        .popular-badge {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            padding: 0.5rem 1.5rem;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+        
+        .pricing-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .price {
+            margin: 1rem 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .price-main {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+        
+        .price-secondary {
+            font-size: 1.2rem;
+            color: #666;
+        }
+        
+        .book-specs {
+            text-align: center;
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .features {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+        
+        .features li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .btn-purchase {
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            margin-bottom: 1rem;
+        }
+        
+        .btn-purchase:hover {
+            background-color: #2a2a3e;
+        }
+        
+        .popular-btn {
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+        }
+        
+        .popular-btn:hover {
+            background-color: #e0c070;
+        }
+        
+        .amazon-btn {
+            background-color: var(--amazon-orange);
+            color: var(--primary-color);
+            border: none;
+        }
+        
+        .amazon-btn:hover {
+            background-color: #ffad33;
+        }
+        
+        .shipping-note, .limited, .digital-note {
+            font-size: 0.9rem;
+            text-align: center;
+            color: #666;
+        }
+        
+        .limited {
+            color: var(--danger);
+            font-weight: 600;
+        }
+        
+        .digital-note {
+            color: var(--success);
+            font-weight: 600;
+            background-color: rgba(40, 167, 69, 0.1);
+            padding: 0.5rem;
+            border-radius: 4px;
+            margin-top: 0.5rem;
+        }
+        
+        /* Book Details */
+        .details-section {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+        
+        .details-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        .detail-item {
+            padding: 1rem;
+            background-color: var(--light-bg);
+            border-radius: 6px;
+        }
+        
+        .detail-label {
+            font-weight: 600;
+            color: var(--accent-color);
+            display: block;
+            margin-bottom: 0.3rem;
+        }
+        
+        /* Amazon CTA */
+        .amazon-cta {
+            text-align: center;
+            padding: 2rem;
+            background-color: #f8f8f8;
+            border-radius: 12px;
+            border: 2px dashed #ddd;
+            margin: 2rem 0;
+        }
+        
+        .amazon-logo {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        /* Final CTA */
+        .final-cta {
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary-color), #2a2a3e);
+            color: white;
+            padding: 4rem 2rem;
+            border-radius: 12px;
+            margin-top: 4rem;
+        }
+        
+        .final-cta h2 {
+            color: white;
+            border: none;
+            font-size: 2.5rem;
+        }
+        
+        .social-proof {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 3rem;
+            margin: 3rem 0;
+            align-items: center;
+        }
+        
+        .counter {
+            background-color: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 8px;
+            border: 2px solid var(--secondary-color);
+        }
+        
+        .counter-number {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--secondary-color);
+        }
+        
+        .counter-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        .testimonial-scroll {
+            text-align: left;
+        }
+        
+        .testimonial-tweet {
+            background-color: rgba(255,255,255,0.1);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            border-left: 3px solid var(--secondary-color);
+            font-style: italic;
+        }
+        
+        .testimonial-tweet span {
+            display: block;
+            margin-top: 0.5rem;
+            font-style: normal;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        .final-buttons {
+            margin-top: 2rem;
+        }
+        
+        .btn-primary-large {
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            padding: 1.2rem 3rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.2rem;
+            display: inline-block;
+            margin-bottom: 1rem;
+            transition: all 0.3s;
+        }
+        
+        .btn-primary-large:hover {
+            background-color: #e0c070;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        .urgency-message {
+            color: var(--secondary-color);
+            font-weight: 600;
+        }
+        
+     /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 3rem 0;
+            margin-top: 4rem;
+            text-align: center;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+        
+        .footer-links a {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+        
+        .copyright {
+            opacity: 0.7;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+        }
+        
+        .legal-note {
+            font-size: 0.8rem;
+            opacity: 0.6;
+            max-width: 800px;
+            margin: 1rem auto;
+            line-height: 1.4;
+        }
+        
+        .rights-notice {
+            font-size: 0.7rem;
+            opacity: 0.5;
+            max-width: 800px;
+            margin: 2rem auto 0;
+            line-height: 1.3;
+            padding: 1rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn-primary, .btn-secondary, .btn-amazon {
+                width: 100%;
+                max-width: 300px;
+                text-align: center;
+            }
+            
+            .trust-badges {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .book-intro {
+                grid-template-columns: 1fr;
+            }
+            
+            .author-section {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .social-proof {
+                grid-template-columns: 1fr;
+            }
+            
+            .pricing-card.popular {
+                transform: none;
+            }
+            
+            .pricing-cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">Bajo el <span>Acorde del Tiempo</span></a>
+            <a href="#preorden" class="cta-header">COMPRAR EN AMAZON</a>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>UNA NOVELA QUE NO SE LEE<br>SE ESCUCHA</h1>
+            <h2>Descubre la historia donde la música es la única que sobrevive al olvido</h2>
+            
+            <div class="cta-buttons">
+                <a href="#preorden" class="btn-amazon">📗 COMPRAR EN AMAZON →</a>
+                <a href="#sinopsis" class="btn-secondary">▶ DESCUBRIR LA HISTORIA</a>
+            </div>
+            
+            <div class="trust-badges">
+                <span>🎵 <strong>Incluye Playlist Exclusiva</strong></span>
+                <span>⭐ <strong>Novela de Realismo y Ficción Temporal</strong></span>
+                <span>📖 <strong>Disponible en Físico y Digital</strong></span>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Book Intro -->
+        <section class="book-intro">
+            <div class="book-cover">
+                <img src="PORTADA.png" alt="Portada del libro Bajo el Acorde del Tiempo" class="book-cover-img">
+            </div>
+            
+            <div class="book-description">
+                <h2>Bajo el Acorde del Tiempo</h2>
+                <p><strong>Una novela de realismo y ficción temporal</strong> que te transportará a Huichapan, un Pueblo Mágico en México, donde el tiempo se detiene, se confunde y vuelve a empezar.</p>
+                
+                <div class="quote">
+                    "La música es la única que sobrevive al olvido."
+                    <span class="quote-author">— Sánchez Diego Gabriel </span>
+                </div>
+                
+                <p>Una obra donde convergen la música, la identidad y los hilos invisibles que conectan los instantes de una vida. Una exploración poética del ritmo íntimo con el que cada persona enfrenta su propia historia.</p>
+            </div>
+        </section>
+        
+        <!-- Synopsis -->
+        <section id="sinopsis" class="synopsis-section">
+            <h2>SINOPSIS</h2>
+            <p><strong>Bajo el Acorde del Tiempo</strong> es mucho más que una novela: es la historia de un pueblo y su gente, una oda a Huichapan, un tributo a la música como brújula y refugio, y un viaje inolvidable hacia la esperanza que resiste incluso al olvido.</p>
+            
+            <p>Un hombre atrapado entre la pérdida y el desencanto descubre la llave a un secreto capaz de desafiar los siglos. Al otro lado del tiempo, dos hijos de una época ingenua y luminosa son arrastrados hacia un futuro que amenaza con quebrar su inocencia.</p>
+            
+            <p>Entre partituras extraviadas, la memoria de un pueblo y los ecos de la música que atraviesa generaciones, se teje una historia donde lo íntimo y lo universal se encuentran.</p>
+            
+            <div class="keywords">
+                <span class="keyword-tag music-tag">Música y Bach</span>
+                <span class="keyword-tag culture-tag">Huichapan, México</span>
+                <span class="keyword-tag philosophy-tag">Ficción Metafísica</span>
+                <span class="keyword-tag mexico-tag">Pueblo Mágico</span>
+                <span class="keyword-tag music-tag">Jazz y Bohemia</span>
+                <span class="keyword-tag philosophy-tag">Paradoja de Bootstrap</span>
+                <span class="keyword-tag culture-tag">Novela Mexicana</span>
+                <span class="keyword-tag music-tag">Melómanos</span>
+            </div>
+        </section>
+        
+        <!-- About Author -->
+        <section class="author-section">
+            <div>
+                <img src="SDG.png" alt="Sánchez Diego Gabriel" class="author-photo">
+            </div>
+            
+            <div class="author-info">
+                <h3>SÁNCHEZ DIEGO GABRIEL</h3>
+               
+                <p>Escritor mexicano nacido en Huichapan, Hidalgo. Apasionado por el realismo mágico, la memoria cultural y la música, desarrolla historias donde lo cotidiano se entrelaza con lo extraordinario.</p>
+                <p>Ha dedicado años a la docencia, la investigación educativa y cultural, la música y la creación narrativa. <strong>Bajo el Acorde del Tiempo</strong> es su primera novela publicada, resultado de años de trabajo, notas dispersas y reflexiones sobre el ritmo íntimo con el que cada persona enfrenta su propia historia.</p>
+                <p>Actualmente trabaja en nuevos proyectos literarios y en la difusión de experiencias creativas que inspiren a jóvenes escritores.</p>
+            </div>
+        </section>
+        
+        <!-- Playlist -->
+        <section class="playlist-section">
+            <div class="playlist-icon">🎵</div>
+            <h2>PLAYLIST EXCLUSIVA DE LA NOVELA</h2>
+            <p class="playlist-description">Como regalo especial por tu compra, recibe acceso a <strong>"El Viaje Temporal"</strong>, una playlist curada en Spotify con las piezas musicales que inspiraron la novela y que te sumergirán en su atmósfera única.</p>
+            <a href="#" class="spotify-button">ESCUCHAR PREVIEW EN SPOTIFY</a>
+        </section>
+        
+        <!-- Amazon CTA -->
+        <section class="amazon-cta">
+            <div class="amazon-logo">📦</div>
+            <h3>¡DISPONIBLE EN AMAZON!</h3>
+            <p>Compra segura con envío a todo el mundo. Kindle Unlimited y Prime Reading disponibles.</p>
+            <a href="#preorden" class="btn-amazon" style="display: inline-block; margin-top: 1rem;">VER EN AMAZON</a>
+        </section>
+        
+        <!-- Pricing -->
+        <section id="preorden" class="pricing-section">
+            <h2>ELIGE TU FORMATO - PRECIOS ESPECIALES</h2>
+            <p class="deadline">🎉 <strong>OFERTA DE LANZAMIENTO - Precios especiales por tiempo limitado</strong></p>
+            
+            <div class="pricing-cards">
+                <!-- VERSIÓN FÍSICA -->
+                <div class="pricing-card popular">
+                    <div class="popular-badge">📗 MÁS VENDIDO</div>
+                    <div class="pricing-header">
+                        <h3>VERSIÓN FÍSICA</h3>
+                        <div class="price">
+                            <span class="price-main">$279 MXN</span>
+                            <span class="price-secondary">$13.99 USD</span>
+                        </div>
+                        <p class="book-specs">196 páginas • Tapa blanda • 6x9 pulgadas</p>
+                    </div>
+                    <ul class="features">
+                        <li>✓ Libro físico impreso en alta calidad</li>
+                        <li>✓ 196 páginas de lectura envolvente</li>
+                        <li>✓ Tamaño: 6x9 pulgadas (15x23 cm)</li>
+                        <li>✓ Tapa blanda duradera</li>
+                        <li>✓ Playlist exclusiva incluida</li>
+                        <li>✓ Envío disponible a todo el mundo</li>
+                    </ul>
+                    <a href="https://www.amazon.com/dp/B0CXXXXXXX" class="btn-purchase popular-btn" target="_blank">COMPRAR VERSIÓN FÍSICA EN AMAZON</a>
+                </div>
+                
+                <!-- VERSIÓN DIGITAL -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>VERSIÓN DIGITAL</h3>
+                        <div class="price">
+                            <span class="price-main">$99 MXN</span>
+                            <span class="price-secondary">$4.99 USD</span>
+                        </div>
+                        <p class="book-specs">OFERTA EXCLUSIVA DE LANZAMIENTO</p>
+                    </div>
+                    <ul class="features">
+                        <li>✓ Mismo contenido que la versión física</li>
+                        <li>✓ Formato Kindle (compatible con app gratuita)</li>
+                        <li>✓ Lectura inmediata tras la compra</li>
+                        <li>✓ Playlist exclusiva incluida</li>
+                        <li>✓ Sin costos de envío</li>
+                        <li>✓ Disponible en Kindle Unlimited</li>
+                    </ul>
+                    <a href="https://www.amazon.com/dp/B0CXXXXXXX" class="btn-purchase amazon-btn" target="_blank">COMPRAR VERSIÓN DIGITAL EN AMAZON</a>
+                    <p class="digital-note">⚠️ Precio especial de lanzamiento - Aumentará pronto</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Book Details -->
+        <section class="details-section">
+            <h3>📖 DETALLES DEL LIBRO</h3>
+            <div class="details-grid">
+                <div class="detail-item">
+                    <span class="detail-label">Título:</span>
+                    Bajo el Acorde del Tiempo
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Autor:</span>
+                    Sánchez Diego Gabriel (Diego Pérez González)
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Año:</span>
+                    2026 (Primera edición)
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">ISBN:</span>
+                    978-607-29-8172-0
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Género:</span>
+                    Realismo y Ficción Temporal
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Páginas:</span>
+                    196 (Físico)
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Formato:</span>
+                    Físico y Digital (Kindle)
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Tamaño:</span>
+                    6x9 pulgadas (15x23 cm)
+                </div>
+            </div>
+        </section>
+        
+        <!-- Final CTA -->
+        <section class="final-cta">
+            <h2>¿LISTO PARA ESCUCHAR LA HISTORIA?</h2>
+            
+            <div class="social-proof">
+                <div class="counter">
+                    <div class="counter-number">196</div>
+                    <div class="counter-label">PÁGINAS DE VIAJE TEMPORAL</div>
+                </div>
+                <div class="testimonial-scroll">
+                    <div class="testimonial-tweet">
+                        "Una oda a Huichapan y a la música como refugio. Sánchez Diego Gabriel captura la esencia de cómo el tiempo se entrelaza con nuestra identidad."
+                        <span>- Lector Beta, Ciudad de México</span>
+                    </div>
+                    <div class="testimonial-tweet">
+                        "Para los que creemos que la mejor literatura es la que resuena como una buena melodía. Una novela que realmente se escucha."
+                        <span>- Melómano y Lector ávido</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="final-buttons">
+                <a href="https://www.amazon.com/dp/B0CXXXXXXX" class="btn-primary-large" target="_blank">COMPRAR AHORA EN AMAZON</a>
+                <p class="urgency-message">⚠️ <strong>Precio especial de lanzamiento</strong> - La versión digital a $59 MXN es por tiempo limitado</p>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+<footer>
+        <div class="container">
+            <div class="logo">Bajo el <span>Acorde del Tiempo</span></div>
+            
+            <div class="footer-links">
+                <a href="mailto:contacto.sdg.author@gmail.com">Contacto del Autor</a>
+                <a href="https://www.amazon.com/dp/B0CXXXXXXX" target="_blank">Comprar en Amazon</a>
+            </div>
+            
+            <div class="rights-notice">
+                <p><strong>© 2026 Diego Pérez González.</strong> Publicado bajo el seudónimo Sánchez Diego Gabriel. Primera edición, 2026. Impreso en México.</p>
+                <p>Para información de derechos o permisos: contacto.sdg.author@gmail.com</p>
+                <p>Todos los derechos reservados. Ninguna parte de esta obra puede ser reproducida, almacenada o transmitida en forma alguna o por cualquier medio — electrónico, mecánico, fotocopiado, grabación o cualquier otro sistema— sin permiso previo y por escrito del titular de los derechos.</p>
+                <p><strong>Advertencia al lector:</strong> La aparición de nombres de personajes reales se utiliza exclusivamente con fines literarios sin pretensión biográfica, histórica o documental. Cualquier semejanza con personas reales, vivas o muertas, que no hayan sido mencionadas explícitamente, es coincidencia literaria.</p>
+                <p>Algunas ubicaciones reales, así como algunas construcciones y monumentos, se mencionan únicamente como referencias geográficas o culturales. No representan descripciones exactas, ni implican patrocinio o relación oficial con dichas instituciones o localidades.</p>
+                <p>El lector debe considerar que cualquier interpretación factual, política, religiosa o histórica es exclusivamente parte del recurso narrativo y no refleja posturas, afirmaciones ni declaraciones del autor, del titular de los derechos o de terceros mencionados.</p>
+                <p>Gracias por permitirte entrar en este universo literario.</p>
+            </div>
+            
+            <p class="copyright">"No perdamos nada de nuestro tiempo; quizá los hubo más bellos, pero este es el nuestro" - Jean Paul Sartre</p>
+        </div>
+    </footer>
+    
