@@ -990,6 +990,72 @@
             </div>
         </section>
     </main>
+    <!-- Añade esto antes del footer o después de la sección de compra -->
+
+<section style="background: linear-gradient(135deg, #1a1a2e, #2a2a3e); color: white; padding: 60px 20px; text-align: center; border-radius: 15px; margin: 50px 0;">
+    <div class="container">
+        <h2 style="color: #c9a96e; border: none; font-size: 2.5rem;">🎻 ÚNETE A LA COMUNIDAD MUSICAL</h2>
+        <p style="font-size: 1.2rem; margin: 20px 0; max-width: 600px; margin-left: auto; margin-right: auto;">
+            Recibe <strong>contenido exclusivo</strong>, avances de próximos proyectos, 
+            y la playlist completa de la novela antes que nadie.
+        </p>
+        
+        <form action="https://formsubmit.co/TU-EMAIL@gmail.com" method="POST" 
+              style="max-width: 500px; margin: 30px auto;">
+            
+            <!-- Campos ocultos para FormSubmit -->
+            <input type="hidden" name="_subject" value="¡Nuevo suscriptor desde la web!">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_next" value="https://[tu-usuario].github.io/[repositorio]/gracias.html">
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_captcha" value="false">
+            
+            <!-- Campo de email -->
+            <div style="margin-bottom: 15px;">
+                <input type="email" name="email" 
+                       placeholder="🎵 Tu correo electrónico" 
+                       required
+                       style="width: 100%; padding: 15px; border-radius: 8px; border: 2px solid #c9a96e; font-size: 1rem;">
+            </div>
+            
+            <!-- Campo de nombre (opcional) -->
+            <div style="margin-bottom: 20px;">
+                <input type="text" name="name" 
+                       placeholder="📝 ¿Cómo te llamas? (opcional)"
+                       style="width: 100%; padding: 15px; border-radius: 8px; border: 2px solid #c9a96e; font-size: 1rem;">
+            </div>
+            
+            <!-- Intereses -->
+            <div style="margin-bottom: 20px; text-align: left;">
+                <p style="margin-bottom: 10px;">🎶 ¿Qué te interesa?</p>
+                <label style="display: block; margin: 5px 0;">
+                    <input type="checkbox" name="intereses[]" value="nuevos_libros"> Próximos libros del autor
+                </label>
+                <label style="display: block; margin: 5px 0;">
+                    <input type="checkbox" name="intereses[]" value="contenido_exclusivo"> Contenido exclusivo sobre la novela
+                </label>
+                <label style="display: block; margin: 5px 0;">
+                    <input type="checkbox" name="intereses[]" value="playlist"> Playlist musical completa
+                </label>
+                <label style="display: block; margin: 5px 0;">
+                    <input type="checkbox" name="intereses[]" value="eventos"> Eventos y presentaciones
+                </label>
+            </div>
+            
+            <!-- Botón de enviar -->
+            <button type="submit" 
+                    style="background: #c9a96e; color: #1a1a2e; border: none; padding: 15px 40px; 
+                           border-radius: 8px; font-size: 1.1rem; font-weight: bold; cursor: pointer;
+                           transition: all 0.3s;">
+                🎻 UNIRME A LA LISTA VIP
+            </button>
+            
+            <p style="font-size: 0.9rem; margin-top: 15px; opacity: 0.8;">
+                Sin spam. Puedes darte de baja en cualquier momento.
+            </p>
+        </form>
+    </div>
+</section>
     
     <!-- Footer -->
 <footer>
