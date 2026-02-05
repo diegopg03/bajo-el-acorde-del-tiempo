@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WB71XXRPV8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-WB71XXRPV8');
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bajo el Acorde del Tiempo | Acceso Anticipado Exclusivo</title>
+    <meta name="description" content="Descubre tu perfil literario y obtén acceso anticipado a la novela donde Bach compone la estructura temporal.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://diegopg03.github.io/bajo-el-acorde-del-tiempo/prelanzamiento.html">
+    <meta property="og:title" content="Acceso Anticipado | Bajo el Acorde del Tiempo">
+    <meta property="og:description" content="Una historia donde la música es la única que sobrevive al olvido. Únete a la lista de espera.">
+    <meta property="og:image" content="https://diegopg03.github.io/bajo-el-acorde-del-tiempo/PORTADA.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://diegopg03.github.io/bajo-el-acorde-del-tiempo/prelanzamiento.html">
+    <meta property="twitter:title" content="Acceso Anticipado | Bajo el Acorde del Tiempo">
+    <meta property="twitter:description" content="Novela que fusiona realismo mágico, música y los secretos de Huichapan. Únete a la lista de espera.">
+    <meta property="twitter:image" content="https://diegopg03.github.io/bajo-el-acorde-del-tiempo/PORTADA.png">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <style>
+        :root {
+            --primary-dark: #0f172a;
+            --secondary-gold: #c9a96e;
+            --accent-amber: #fbbf24;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #e2e8f0;
+            overflow-x: hidden;
+        }
+        
+        .font-serif {
+            font-family: 'Cormorant Garamond', serif;
+        }
+        
+        /* RESPONSIVE ADJUSTMENTS */
+        
+        /* Animaciones responsivas */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+        
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        /* Hero Section - Optimizado para móvil */
+        .hero-particles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        .particle {
+            position: absolute;
+            background: rgba(201, 169, 110, 0.3);
+            border-radius: 50%;
+        }
+        
+        /* Textos responsivos */
+        .text-responsive-hero {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            line-height: 1.2;
+        }
+        
+        .text-responsive-subtitle {
+            font-size: clamp(1rem, 3vw, 1.4rem);
+        }
+        
+        .text-responsive-h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+        }
+        
+        .text-responsive-h3 {
+            font-size: clamp(1.5rem, 3vw, 2rem);
+        }
+        
+        .text-responsive-body {
+            font-size: clamp(0.875rem, 2vw, 1.125rem);
+        }
+        
+        /* Grids responsivos */
+        .grid-responsive {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+            gap: 1.5rem;
+        }
+        
+        /* Botones responsivos */
+        .btn-responsive {
+            padding: clamp(0.75rem, 2vw, 1rem) clamp(1.5rem, 3vw, 2rem);
+            font-size: clamp(0.875rem, 2vw, 1rem);
+            min-height: 48px;
+        }
+        
+        /* Container responsivo */
+        .container-responsive {
+            width: 100%;
+            padding-left: clamp(1rem, 3vw, 1.5rem);
+            padding-right: clamp(1rem, 3vw, 1.5rem);
+            margin: 0 auto;
+        }
+        
+        /* Cards responsivas */
+        .card-responsive {
+            padding: clamp(1rem, 3vw, 1.5rem);
+            border-radius: clamp(0.75rem, 2vw, 1rem);
+        }
+        
+        /* Imágenes responsivas */
+        .img-responsive {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+        }
+        
+        /* Navegación móvil optimizada */
+        .mobile-menu-item {
+            padding: 1rem;
+            font-size: 1.25rem;
+            width: 100%;
+            text-align: center;
+        }
+        
+        /* Tooltip optimizado para móvil */
+        .tooltip-container {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .tooltip-content {
+            visibility: hidden;
+            position: absolute;
+            z-index: 100;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #1e293b;
+            color: #e2e8f0;
+            padding: 0.5rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            white-space: normal;
+            max-width: 200px;
+            border: 1px solid #c9a96e;
+            opacity: 0;
+            transition: opacity 0.3s;
+            word-wrap: break-word;
+        }
+        
+        @media (hover: hover) and (pointer: fine) {
+            .tooltip-container:hover .tooltip-content {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+        
+        /* Para touch devices */
+        @media (hover: none) and (pointer: coarse) {
+            .tooltip-container.active .tooltip-content {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+        
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+        
+        /* Mejoras para dispositivos táctiles */
+        @media (hover: none) and (pointer: coarse) {
+            button, 
+            a, 
+            .quiz-option,
+            .map-point {
+                min-height: 44px;
+            }
+            
+            .quiz-options,
+            .footer-links {
+                gap: 1rem;
+            }
+        }
+        
+        /* Optimización para tablets */
+        @media (min-width: 640px) and (max-width: 1024px) {
+            .tablet-grid-2 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .tablet-text-center {
+                text-align: center;
+            }
+        }
+        
+        /* Optimización para pantallas pequeñas */
+        @media (max-width: 640px) {
+            .mobile-stack {
+                flex-direction: column;
+            }
+            
+            .mobile-full-width {
+                width: 100%;
+            }
+            
+            .mobile-text-center {
+                text-align: center;
+            }
+            
+            .mobile-padding-sm {
+                padding: 1rem;
+            }
+            
+            .mobile-margin-sm {
+                margin: 0.5rem 0;
+            }
+            
+            .quiz-option {
+                padding: 1rem;
+                font-size: 0.875rem;
+            }
+            
+            .quiz-option .option-icon {
+                font-size: 1.5rem;
+            }
+        }
+        
+        /* Optimización para pantallas muy pequeñas (iPhone SE, etc) */
+        @media (max-width: 375px) {
+            .xs-text-sm {
+                font-size: 0.875rem;
+            }
+            
+            .xs-padding-xs {
+                padding: 0.75rem;
+            }
+            
+            .xs-gap-xs {
+                gap: 0.5rem;
+            }
+            
+            .hero-title {
+                font-size: 1.75rem;
+            }
+        }
+        
+        /* Mejoras de accesibilidad */
+        @media (prefers-reduced-motion: reduce) {
+            .animate-fade-in,
+            .animate-float,
+            .hover-card,
+            .quiz-option {
+                animation: none;
+                transition: none;
+            }
+        }
+        
+        /* Dark mode support */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #0f172a;
+                color: #e2e8f0;
+            }
+        }
+        
+        /* Impresión optimizada */
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+            
+            body {
+                color: #000;
+                background: #fff;
+            }
+            
+            a {
+                color: #000;
+                text-decoration: underline;
+            }
+        }
+        
+        /* Estilos específicos para el Quiz */
+        .quiz-option.selected {
+            background-color: rgba(201, 169, 110, 0.2);
+            border-color: #c9a96e;
+            transform: scale(0.98);
+        }
+        
+        .progress-fill {
+            transition: width 0.5s ease-in-out;
+        }
+        
+        /* Estilos para formularios */
+        input, textarea {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        /* Estilos de transición para hover */
+        .hover-card {
+            transition: all 0.3s ease;
+        }
+        
+        .hover-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-slate-900/90 backdrop-blur-sm no-print">
+        <div class="container-responsive flex justify-between items-center py-3 md:py-4">
+            <a href="#" class="logo flex items-center gap-2">
+                <span class="text-amber-400 text-xl md:text-2xl">♫</span>
+                <span class="font-serif text-lg md:text-xl font-semibold">Bajo el Acorde del Tiempo</span>
+            </a>
+            <div class="hidden md:flex items-center gap-4 lg:gap-8 text-sm">
+                <a href="#resonancia" class="nav-link hover:text-amber-400 transition text-responsive-body">La Resonancia</a>
+                <a href="#quiz" class="nav-link hover:text-amber-400 transition text-responsive-body">Tu Acorde</a>
+                <a href="#fragmento" class="nav-link hover:text-amber-400 transition text-responsive-body">Fragmento</a>
+                <a href="#testimonios" class="nav-link hover:text-amber-400 transition text-responsive-body">Testimonios</a>
+                <a href="#quiz" class="cta-nav bg-amber-500 text-slate-900 px-3 md:px-4 py-2 rounded-full font-medium hover:bg-amber-400 transition btn-responsive">Acceso Anticipado</a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden text-2xl text-amber-400 focus:outline-none" aria-label="Abrir menú">
+                ☰
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 bg-slate-900/95 z-40 hidden flex-col items-center justify-center gap-6 text-xl no-print">
+        <button id="close-mobile-menu" class="absolute top-4 right-4 text-3xl text-amber-400">×</button>
+        <a href="#resonancia" class="mobile-menu-item text-slate-300 hover:text-amber-400 transition mobile-full-width mobile-text-center">La Resonancia</a>
+        <a href="#quiz" class="mobile-menu-item text-slate-300 hover:text-amber-400 transition mobile-full-width mobile-text-center">Tu Acorde</a>
+        <a href="#fragmento" class="mobile-menu-item text-slate-300 hover:text-amber-400 transition mobile-full-width mobile-text-center">Fragmento</a>
+        <a href="#testimonios" class="mobile-menu-item text-slate-300 hover:text-amber-400 transition mobile-full-width mobile-text-center">Testimonios</a>
+        <a href="#autor" class="mobile-menu-item text-slate-300 hover:text-amber-400 transition mobile-full-width mobile-text-center">Autor</a>
+        <a href="#quiz" class="mobile-menu-item bg-amber-500 text-slate-900 px-6 py-3 rounded-full font-semibold hover:bg-amber-400 transition mobile-margin-sm">Acceso Anticipado</a>
+    </div>
+
+    <!-- Hero Section -->
+    <header id="hero" class="relative min-h-[90vh] md:min-h-screen flex items-center justify-center overflow-hidden pt-16">
+        <!-- Fondo con partículas -->
+        <div class="absolute inset-0 bg-gradient-to-b from-slate-800 via-slate-900 to-slate-950"></div>
+        <div class="hero-particles" id="particles-container"></div>
+        
+        <!-- Contenido principal -->
+        <div class="relative z-10 text-center container-responsive animate-fade-in">
+            <p class="text-amber-400 font-medium tracking-widest uppercase mb-3 md:mb-4 text-sm md:text-base">Próximamente | Novela de Sánchez Diego Gabriel</p>
+            <h1 class="font-serif font-bold mb-4 md:mb-6 leading-tight text-responsive-hero">
+                La primera novela donde <span class="text-amber-400">Bach</span> compone la estructura temporal
+            </h1>
+            <p class="text-slate-300 mb-6 md:mb-8 max-w-2xl mx-auto text-responsive-subtitle">
+                Descubre tu perfil literario único y sé el primero en acceder a esta obra donde la música se convierte en narrativa.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-center mobile-stack">
+                <a href="#quiz" class="cta-primary bg-amber-500 text-slate-900 px-4 md:px-8 py-3 md:py-4 rounded-full font-semibold hover:bg-amber-400 transition-all hover:scale-105 flex items-center justify-center gap-2 btn-responsive mobile-full-width sm:w-auto">
+                    <span>🎵 Descubre tu acorde literario</span>
+                </a>
+                <a href="#quiz" class="cta-secondary border-2 border-slate-400 text-slate-200 px-4 md:px-8 py-3 md:py-4 rounded-full font-semibold hover:border-amber-400 hover:text-amber-400 transition-all btn-responsive mobile-full-width sm:w-auto">
+                    Obtener acceso anticipado
+                </a>
+            </div>
+        </div>
+        
+        <!-- Indicador de scroll -->
+        <div class="absolute bottom-4 md:bottom-8 left-1/2 -translate-x-1/2 animate-float">
+            <a href="#resonancia" class="text-slate-400 hover:text-amber-400 transition" aria-label="Desplazar hacia abajo">
+                <svg class="w-6 h-6 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <!-- Pain Point Section -->
+    <section class="py-12 md:py-16 bg-gradient-to-b from-slate-950 to-slate-900">
+        <div class="container-responsive text-center">
+            <p class="text-xl md:text-2xl lg:text-3xl font-serif text-slate-300 italic px-4">
+                "¿Cansado de ficción superficial? <span class="text-amber-400">Esta novela ofrece la profundidad que buscas.</span>"
+            </p>
+        </div>
+    </section>
+
+    <!-- Book Intro Section -->
+    <section id="book-intro" class="py-12 md:py-24 bg-slate-900">
+        <div class="container-responsive">
+            <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center mobile-stack">
+                <div class="flex justify-center order-2 md:order-1">
+                    <div class="relative max-w-xs md:max-w-md">
+                        <img src="https://diegopg03.github.io/bajo-el-acorde-del-tiempo/PORTADA.png" 
+                             alt="Portada del libro Bajo el Acorde del Tiempo" 
+                             class="rounded-xl md:rounded-2xl shadow-xl md:shadow-2xl img-responsive hover-card">
+                        <div class="absolute -bottom-3 -right-3 md:-bottom-4 md:-right-4 bg-amber-500 text-slate-900 px-3 md:px-4 py-1 md:py-2 rounded-lg font-serif text-base md:text-lg font-bold">
+                            Edición 2026
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2">
+                    <h2 class="font-serif font-bold mb-4 md:mb-6 text-responsive-h2">Bajo el Acorde del Tiempo</h2>
+                    <p class="text-slate-300 mb-4 md:mb-6 text-responsive-body">
+                        Una novela de <strong class="text-amber-400">realismo y ficción temporal</strong> que te transportará a Huichapan, un Pueblo Mágico en México, donde el tiempo se detiene, se confunde y vuelve a empezar.
+                    </p>
+                    <div class="bg-slate-800/50 p-4 md:p-6 rounded-xl border-l-4 border-amber-500 mb-4 md:mb-6 card-responsive">
+                        <p class="font-serif italic text-slate-200 text-lg md:text-xl">
+                            "La música es la única que sobrevive al olvido."
+                        </p>
+                        <p class="text-amber-400 mt-2 text-responsive-body">— Sánchez Diego Gabriel</p>
+                    </div>
+                    <p class="text-slate-300 text-responsive-body">
+                        Una obra donde convergen la música, la identidad y los hilos invisibles que conectan los instantes de una vida.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- La Resonancia Section -->
+    <section id="resonancia" class="py-12 md:py-24 bg-slate-900">
+        <div class="container-responsive">
+            <div class="text-center mb-8 md:mb-16 mobile-text-center">
+                <span class="text-amber-400 text-3xl md:text-4xl mb-3 md:mb-4 block">𝄞</span>
+                <h2 class="font-serif font-bold mb-3 md:mb-4 text-responsive-h2">La Resonancia</h2>
+                <p class="text-slate-400 text-responsive-body max-w-2xl mx-auto">Por qué esta novela es única en el panorama literario</p>
+            </div>
+            
+            <div class="grid-responsive gap-4 md:gap-6 lg:gap-8">
+                <div class="bg-slate-800/50 p-6 md:p-8 rounded-xl md:rounded-2xl border border-slate-700 hover:border-amber-500/50 transition-all hover-card card-responsive">
+                    <div class="text-3xl md:text-4xl mb-3 md:mb-4">🎼</div>
+                    <h3 class="font-serif font-semibold mb-3 text-responsive-h3 text-amber-400">Arquitectura Musical</h3>
+                    <p class="text-slate-300 text-responsive-body">No es una novela sobre música. <strong>Es música hecha narrativa.</strong> Las estructuras de fuga y contrapunto de Bach se traducen literalmente en la trama.</p>
+                </div>
+                <div class="bg-slate-800/50 p-6 md:p-8 rounded-xl md:rounded-2xl border border-slate-700 hover:border-amber-500/50 transition-all hover-card card-responsive">
+                    <div class="text-3xl md:text-4xl mb-3 md:mb-4">⏳</div>
+                    <h3 class="font-serif font-semibold mb-3 text-responsive-h3 text-amber-400">Tiempo No Lineal</h3>
+                    <p class="text-slate-300 text-responsive-body">La paradoja de bootstrap y la circularidad temporal exploradas a través de la memoria cultural mexicana y el misticismo de los Pueblos Mágicos.</p>
+                </div>
+                <div class="bg-slate-800/50 p-6 md:p-8 rounded-xl md:rounded-2xl border border-slate-700 hover:border-amber-500/50 transition-all hover-card card-responsive">
+                    <div class="text-3xl md:text-4xl mb-3 md:mb-4">🇲🇽</div>
+                    <h3 class="font-serif font-semibold mb-3 text-responsive-h3 text-amber-400">Realismo Mágico Renovado</h3>
+                    <p class="text-slate-300 text-responsive-body">Huichapan como nunca lo imaginaste: un Pueblo Mágico donde las calles coloniales son pasillos del tiempo y las campanas tocan acordes imposibles.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz Section - COMPLETAMENTE FUNCIONAL CON ENVÍO DE EMAIL -->
+    <section id="quiz" class="py-12 md:py-24 bg-slate-950">
+        <div class="container-responsive max-w-3xl">
+            <div class="text-center mb-8 md:mb-12 mobile-text-center">
+                <span class="text-amber-400 text-3xl md:text-4xl mb-3 md:mb-4 block">🎵</span>
+                <h2 class="font-serif font-bold mb-3 md:mb-4 text-responsive-h2">¿Cuál es tu acorde temporal literario?</h2>
+                <p class="text-slate-400 text-responsive-body">Un viaje interactivo que combina tus preferencias musicales, literarias y filosóficas</p>
+            </div>
+            
+            <div id="quiz-container" class="bg-slate-800/50 rounded-xl md:rounded-2xl p-4 md:p-6 lg:p-8 border border-slate-700 card-responsive">
+                <!-- Quiz Step 1 -->
+                <div class="quiz-step active" data-step="1">
+                    <div class="mb-6 md:mb-8">
+                        <span class="text-amber-400 text-xs md:text-sm font-medium">Pregunta 1 de 4</span>
+                        <div class="w-full bg-slate-700 rounded-full h-2 mt-2">
+                            <div class="progress-fill bg-amber-500 h-2 rounded-full transition-all duration-300" style="width: 25%"></div>
+                        </div>
+                    </div>
+                    <h3 class="font-serif font-semibold mb-4 md:mb-6 text-responsive-h3">¿Qué género musical resuena más contigo?</h3>
+                    <div class="grid gap-3 md:gap-4">
+                        <button class="quiz-option w-full text-left p-3 md:p-4 rounded-lg md:rounded-xl border border-slate-600 bg-slate-700/50 hover:bg-slate-700 transition-all mobile-padding-sm" data-value="clasica">
+                            <span class="text-xl md:text-2xl mr-2 md:mr-3">🎻</span>
+                            <span class="text-sm md:text-base">Clásica (Bach, Mozart, Beethoven)</span>
+                        </button>
+                        <button class="quiz-option w-full text-left p-3 md:p-4 rounded-lg md:rounded-xl border border-slate-600 bg-slate-700/50 hover:bg-slate-700 transition-all mobile-padding-sm" data-value="jazz">
+                            <span class="text-xl md:text-2xl mr-2 md:mr-3">🎷</span>
+                            <span class="text-sm md:text-base">Jazz (Coltrane, Miles Davis)</span>
+                        </button>
+                        <button class="quiz-option w-full text-left p-3 md:p-4 rounded-lg md:rounded-xl border border-slate-600 bg-slate-700/50 hover:bg-slate-700 transition-all mobile-padding-sm" data-value="folk">
+                            <span class="text-xl md:text-2xl mr-2 md:mr-3">🪕</span>
+                            <span class="text-sm md:text-base">Folklórica / Tradicional</span>
+                        </button>
+                        <button class="quiz-option w-full text-left p-3 md:p-4 rounded-lg md:rounded-xl border border-slate-600 bg-slate-700/50 hover:bg-slate-700 transition-all mobile-padding-sm" data-value="contemporanea">
+                            <span class="text-xl md:text-2xl mr-2 md:mr-3">🎧</span>
+                            <span class="text-sm md:text-base">Contemporánea / Experimental</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Quiz Step 2 -->
+                <div class="quiz-step hidden" data-step="2">
+                    <div class="mb-6 md:mb-8">
+                        <span class="text-amber-400 text-xs md:text-sm font-medium">Pregunta 2 de 4</span>
+                        <div class="w-full bg-slate-700 rounded-full h-2 mt-2">
+                            <div class="progress-fill bg-amber-500 h-2 rounded-full transition-all duration-300" style="width: 50%"></div>
+                        </div>
+                    </div>
+                    <h3 class="font-serif font-semibold mb-4 md:mb-6 text-responsive-h3">¿Qué autor te ha marcado más?</h3>
+                    <div class="grid gap-3 md:gap-4">
+                        <button class="quiz-option w-full text-left p-3 md:p-4 rounded-lg md:rounded-xl border border-slate-600 bg-slate-700/50 hover:bg-slate-700 transition-all mobile-padding-sm" data-value="borges">
+                            <span class="text-xl md:text-2xl mr-2 md:mr-3">📚</span>
+                            <span class="text-sm md:text-base">Jorge Luis Borges</span>
+                        </button>
+                        <button class="quiz-option w-full text-left p-3 md:p-4 rounded-lg md:rounded-xl border border-slate-600 bg-slate-700/50 hover:bg-slate-700 transition-all mobile-padding-sm" data-value="cortazar">
+                            <span class="text-xl md:text-2xl mr-2 md:mr-3">🌀</span>
+                            <span class="text-sm md:text-base">Julio Cortázar</span>
+                        </button>
+                        <button class="quiz-option w-full text-left p-3 md:p-4 rounded-lg md:rounded-xl border border-slate-600 bg-slate-700/50 hover:bg-slate-700 transition-all mobile-padding-sm" data-value="marquez">
+                            <span class="text-xl md:text-2xl mr-2 md:mr-3">🦋</span>
+                            <span class="text-sm md:text-base">Gabriel García Márquez</span>
+                        </button>
+                        <button class="quiz-option w-full text-left p-3 md:p-4 rounded-lg md:rounded-xl border border-slate-600 bg-slate-700/50 hover:bg-slate-700 transition-all mobile-padding-sm" data-value="woolf">
+                            <span class="text-xl md:text-2xl mr-2 md:mr-3">🌊</span>
+                            <span class="text-sm md:text-base">Virginia Woolf</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Quiz Step 3 -->
+                <div class="quiz-step hidden" data-step="3">
+                    <div class="mb-6 md:mb-8">
+                        <span class="text-amber-400 text-xs md:text-sm font-medium">Pregunta 3 de 4</span>
+                        <div class="w-full bg-slate-700 rounded-full h-2 mt-2">
+                            <div class="progress-fill bg-amber-500 h-2 rounded-full transition-all duration-300" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <h3 class="font-serif font-semibold mb-4 md:mb-6 text-responsive-h3">¿Qué concepto temporal te intriga más?</h3>
+                    <div class="grid gap-3 md:gap-4">
+                        <button class="quiz-option w-full text-left p-3 md:p-4 rounded-lg md:rounded-xl border border-slate-600 bg-slate-700/50 hover:bg-slate-700 transition-all mobile-padding-sm" data-value="paradojas">
+                            <span class="text-xl md:text-2xl mr-2 md:mr-3">♾️</span>
+                            <span class="text-sm md:text-base">Paradojas temporales</span>
+                        </button>
+                        <button class="quiz-option w-full text-left p-3 md:p-4 rounded-lg md:rounded-xl border border-slate-600 bg-slate-700/50 hover:bg-slate-700 transition-all mobile-padding-sm" data-value="circularidad">
+                            <span class="text-xl md:text-2xl mr-2 md:mr-3">🔄</span>
+                            <span class="text-sm md:text-base">Circularidad y repetición</span>
+                        </button>
+                        <button class="quiz-option w-full text-left p-3 md:p-4 rounded-lg md:rounded-xl border border-slate-600 bg-slate-700/50 hover:bg-slate-700 transition-all mobile-padding-sm" data-value="eternidad">
+                            <span class="text-xl md:text-2xl mr-2 md:mr-3">⭐</span>
+                            <span class="text-sm md:text-base">El eterno retorno</span>
+                        </button>
+                        <button class="quiz-option w-full text-left p-3 md:p-4 rounded-lg md:rounded-xl border border-slate-600 bg-slate-700/50 hover:bg-slate-700 transition-all mobile-padding-sm" data-value="simultaneidad">
+                            <span class="text-xl md:text-2xl mr-2 md:mr-3">⚡</span>
+                            <span class="text-sm md:text-base">Simultaneidad</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Quiz Step 4 -->
+                <div class="quiz-step hidden" data-step="4">
+                    <div class="mb-6 md:mb-8">
+                        <span class="text-amber-400 text-xs md:text-sm font-medium">Pregunta 4 de 4</span>
+                        <div class="w-full bg-slate-700 rounded-full h-2 mt-2">
+                            <div class="progress-fill bg-amber-500 h-2 rounded-full transition-all duration-300" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <h3 class="font-serif font-semibold mb-4 md:mb-6 text-responsive-h3">¿Cuál es tu conexión con México?</h3>
+                    <div class="grid gap-3 md:gap-4">
+                        <button class="quiz-option w-full text-left p-3 md:p-4 rounded-lg md:rounded-xl border border-slate-600 bg-slate-700/50 hover:bg-slate-700 transition-all mobile-padding-sm" data-value="raices">
+                            <span class="text-xl md:text-2xl mr-2 md:mr-3">🌵</span>
+                            <span class="text-sm md:text-base">Raíces profundas</span>
+                        </button>
+                        <button class="quiz-option w-full text-left p-3 md:p-4 rounded-lg md:rounded-xl border border-slate-600 bg-slate-700/50 hover:bg-slate-700 transition-all mobile-padding-sm" data-value="cultural">
+                            <span class="text-xl md:text-2xl mr-2 md:mr-3">🎭</span>
+                            <span class="text-sm md:text-base">Curiosidad cultural</span>
+                        </button>
+                        <button class="quiz-option w-full text-left p-3 md:p-4 rounded-lg md:rounded-xl border border-slate-600 bg-slate-700/50 hover:bg-slate-700 transition-all mobile-padding-sm" data-value="vivencial">
+                            <span class="text-xl md:text-2xl mr-2 md:mr-3">🏛️</span>
+                            <span class="text-sm md:text-base">Experiencia vivencial (viajes)</span>
+                        </button>
+                        <button class="quiz-option w-full text-left p-3 md:p-4 rounded-lg md:rounded-xl border border-slate-600 bg-slate-700/50 hover:bg-slate-700 transition-all mobile-padding-sm" data-value="ninguna">
+                            <span class="text-xl md:text-2xl mr-2 md:mr-3">🌎</span>
+                            <span class="text-sm md:text-base">Descubriendo desde lejos</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Quiz Result -->
+                <div id="quiz-result" class="hidden text-center">
+                    <div class="mb-6 md:mb-8">
+                        <span class="text-4xl md:text-6xl mb-3 md:mb-4 block animate-float">🎼</span>
+                        <h3 class="font-serif font-bold mb-2 text-responsive-h3">Tu Acorde Temporal Literario:</h3>
+                        <p id="result-name" class="text-amber-400 text-xl md:text-2xl font-semibold"></p>
+                    </div>
+                    <p id="result-description" class="text-slate-300 mb-6 md:mb-8 text-responsive-body"></p>
+                    <div class="bg-slate-700/50 rounded-lg md:rounded-xl p-4 md:p-6 mb-6 md:mb-8">
+                        <p class="text-slate-400 mb-2 text-responsive-body">Tu perfil coincide perfectamente con:</p>
+                        <p class="font-serif text-lg md:text-xl font-semibold text-amber-400">"Bajo el Acorde del Tiempo"</p>
+                    </div>
+                    <form id="email-capture" class="space-y-3 md:space-y-4" method="POST" action="https://formsubmit.co/contacto.sdg.author@gmail.com">
+                        <!-- Campos ocultos para FormSubmit -->
+                        <input type="hidden" name="_subject" value="¡Nuevo resultado del Quiz - Perfil Literario!">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_next" value="https://diegopg03.github.io/bajo-el-acorde-del-tiempo/gracias1.html">
+                        <input type="text" name="_honey" style="display:none">
+                        <input type="hidden" name="_captcha" value="false">
+                        
+                        <!-- Campos ocultos con las respuestas del quiz -->
+                        <input type="hidden" name="perfil_nombre" id="hidden-profile-name">
+                        <input type="hidden" name="musica_pref" id="hidden-music-pref">
+                        <input type="hidden" name="autor_pref" id="hidden-author-pref">
+                        <input type="hidden" name="tiempo_pref" id="hidden-time-pref">
+                        <input type="hidden" name="mexico_pref" id="hidden-mexico-pref">
+                        
+                        <p class="text-slate-300 text-responsive-body">Recibe tu análisis completo + recomendaciones literarias personalizadas:</p>
+                        <input type="email" 
+                               name="email" 
+                               placeholder="tu@email.com" 
+                               required 
+                               class="w-full px-4 py-3 rounded-lg bg-slate-700 border border-slate-600 focus:border-amber-500 focus:outline-none text-white text-responsive-body">
+                        <button type="submit" class="w-full bg-amber-500 text-slate-900 py-3 rounded-lg font-semibold hover:bg-amber-400 transition btn-responsive">
+                            Enviar mi perfil completo
+                        </button>
+                    </form>
+                    <button id="reset-quiz" class="mt-4 text-amber-400 hover:text-amber-300 text-sm underline transition">
+                        ← Hacer el quiz nuevamente
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fragmento Section -->
+    <section id="fragmento" class="py-12 md:py-24 bg-gradient-to-b from-slate-950 to-slate-900">
+        <div class="container-responsive max-w-4xl">
+            <div class="text-center mb-8 md:mb-12 mobile-text-center">
+                <h2 class="font-serif font-bold mb-3 md:mb-4 text-responsive-h2">Fragmento</h2>
+                <p class="text-slate-400 text-responsive-body">Un fragmento inmersivo con anotaciones musicales interactivas</p>
+            </div>
+            
+            <div class="bg-slate-800/30 rounded-xl md:rounded-2xl p-4 md:p-6 lg:p-8 border border-slate-700 card-responsive">
+                <div class="prose prose-invert max-w-none">
+                    <p class="text-slate-300 mb-4 md:mb-6 text-responsive-body first-letter:text-3xl md:first-letter:text-5xl first-letter:font-serif first-letter:text-amber-400 first-letter:mr-2 first-letter:float-left">
+                        Las campanas del templo de San Mateo Apóstol, en Huichapan no tocaban como las demás campanas. Kin lo había notado desde niño, cuando su abuela la llevaba a misa de seis y el 
+                        <span class="tooltip-container text-amber-400 cursor-help border-b border-dashed border-amber-400" 
+                              data-tooltip="Primera aparición del motivo melódico principal, equivalente al tema de la fuga en D menor de Bach">
+                            bronce resonaba en acordes que parecían imposibles
+                            <span class="tooltip-content">Primera aparición del motivo melódico principal, equivalente al tema de la fuga en D menor de Bach</span>
+                        </span>.
+                    </p>
+                    <p class="text-slate-300 mb-4 md:mb-6 text-responsive-body">
+                        "Tres notas simultáneas", pensaba, "cuando solo hay una campana". Pero su abuela nunca parecía escuchar lo mismo. Nadie lo hacía.
+                    </p>
+                    <p class="text-slate-300 mb-6 md:mb-8 text-responsive-body">
+                        Esa mañana de octubre, 
+                        <span class="tooltip-container text-amber-400 cursor-help border-b border-dashed border-amber-400" 
+                              data-tooltip="El contrapunto aquí refleja la estructura inversa de un canon retrogrado">
+                            el tañido era diferente
+                            <span class="tooltip-content">El contrapunto aquí refleja la estructura inversa de un canon retrogrado</span>
+                        </span>. 
+                        Más profundo. Como si las piedras coloniales del atrio vibraran en frecuencias que el oído humano apenas podía rozar. Kin cerró los ojos y, por primera vez en sus treinta y dos años, vio lo que siempre había escuchado: un hombre escribiendo partituras bajo un cielo que no era de este siglo...
+                    </p>
+                </div>
+                <div class="text-center mt-4 md:mt-8">
+                    <a href="#quiz" class="inline-flex items-center gap-2 text-amber-400 hover:text-amber-300 transition text-responsive-body">
+                        <span>¿Te resonó? Descubre más de tu perfil lector</span>
+                        <svg class="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios Section -->
+    <section id="testimonios" class="py-12 md:py-24 bg-slate-900">
+        <div class="container-responsive">
+            <div class="text-center mb-8 md:mb-16 mobile-text-center">
+                <h2 class="font-serif font-bold mb-3 md:mb-4 text-responsive-h2">Voces que Resuenan</h2>
+                <p class="text-slate-400 text-responsive-body">Lo que dicen los primeros lectores</p>
+            </div>
+            
+            <div class="grid-responsive gap-4 md:gap-6 lg:gap-8">
+                <div class="bg-slate-800/50 rounded-xl md:rounded-2xl p-4 md:p-6 border border-slate-700 hover-card card-responsive">
+                    <div class="flex items-center gap-3 md:gap-4 mb-3 md:mb-4">
+                        <div class="w-10 h-10 md:w-14 md:h-14 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-base md:text-xl font-bold">JC</div>
+                        <div>
+                            <p class="font-semibold text-sm md:text-base">Juan Carlos M.</p>
+                            <p class="text-slate-400 text-xs md:text-sm">Pianista profesional</p>
+                        </div>
+                    </div>
+                    <p class="text-slate-300 italic text-responsive-body">"Nunca había leído una novela que me hiciera escuchar a Bach de manera diferente. Después de leerla, las Variaciones Goldberg tienen nuevas capas para mí."</p>
+                </div>
+                
+                <div class="bg-slate-800/50 rounded-xl md:rounded-2xl p-4 md:p-6 border border-slate-700 hover-card card-responsive">
+                    <div class="flex items-center gap-3 md:gap-4 mb-3 md:mb-4">
+                        <div class="w-10 h-10 md:w-14 md:h-14 rounded-full bg-gradient-to-br from-amber-500 to-red-600 flex items-center justify-center text-base md:text-xl font-bold">AL</div>
+                        <div>
+                            <p class="font-semibold text-sm md:text-base">Ana Lucía R.</p>
+                            <p class="text-slate-400 text-xs md:text-sm">Profesora de Literatura</p>
+                        </div>
+                    </div>
+                    <p class="text-slate-300 italic text-responsive-body">"Una renovación del realismo mágico que García Márquez aprobaría. La ambientación en Huichapan es perfecta: olorosa, tangible, imposible."</p>
+                </div>
+                
+                <div class="bg-slate-800/50 rounded-xl md:rounded-2xl p-4 md:p-6 border border-slate-700 hover-card card-responsive">
+                    <div class="flex items-center gap-3 md:gap-4 mb-3 md:mb-4">
+                        <div class="w-10 h-10 md:w-14 md:h-14 rounded-full bg-gradient-to-br from-green-500 to-teal-600 flex items-center justify-center text-base md:text-xl font-bold">MF</div>
+                        <div>
+                            <p class="font-semibold text-sm md:text-base">Miguel F.</p>
+                            <p class="text-slate-400 text-xs md:text-sm">Lector del Festival Cervantino</p>
+                        </div>
+                    </div>
+                    <p class="text-slate-300 italic text-responsive-body">"Me la leí en una sentada. El capítulo 4 es de los fragmentos literarios más intensos que he leído en años. Necesito la segunda parte."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Author Section -->
+    <section id="autor" class="py-12 md:py-24 bg-slate-900">
+        <div class="container-responsive">
+            <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-center mobile-stack">
+                <div class="order-2 lg:order-1">
+                    <span class="text-amber-400 font-medium tracking-widest uppercase mb-3 md:mb-4 block text-sm md:text-base">Sobre el autor</span>
+                    <h2 class="font-serif font-bold mb-4 md:mb-6 text-responsive-h2">Sánchez Diego Gabriel</h2>
+                    <p class="text-slate-300 mb-3 md:mb-4 text-responsive-body">
+                        Escritor mexicano nacido en Huichapan, Hidalgo. Apasionado por el realismo mágico, la memoria cultural y la música, desarrolla historias donde lo cotidiano se entrelaza con lo extraordinario.
+                    </p>
+                    <p class="text-slate-300 mb-4 md:mb-6 text-responsive-body">
+                        Ha dedicado años a la docencia, la investigación educativa y cultural, la música y la creación narrativa. <strong class="text-amber-400">Bajo el Acorde del Tiempo</strong> es su primera novela publicada, resultado de años de trabajo, notas dispersas y reflexiones sobre el ritmo íntimo con el que cada persona enfrenta su propia historia.
+                    </p>
+                    <div class="flex gap-3 md:gap-4">
+                        <a href="mailto:contacto.sdg.author@gmail.com" class="text-slate-400 hover:text-amber-400 transition text-xl md:text-2xl">✉️</a>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2 flex justify-center">
+                    <div class="relative max-w-xs md:max-w-sm">
+                        <img src="https://diegopg03.github.io/bajo-el-acorde-del-tiempo/SDG.png" 
+                             alt="Sánchez Diego Gabriel" 
+                             class="rounded-xl md:rounded-2xl w-full h-auto max-w-xs md:max-w-sm object-cover border-3 md:border-4 border-amber-500 shadow-xl md:shadow-2xl">
+                        <div class="absolute -bottom-3 -right-3 md:-bottom-4 md:-right-4 bg-amber-500 text-slate-900 px-3 md:px-4 py-1 md:py-2 rounded-lg font-serif text-base md:text-lg font-bold">
+                            El Autor
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-12 md:py-24 bg-gradient-to-b from-slate-950 to-slate-900">
+        <div class="container-responsive max-w-4xl">
+            <div class="text-center mb-6 md:mb-8 mobile-text-center">
+                <h2 class="font-serif font-bold mb-4 md:mb-8 text-responsive-h2">¿Listo para escuchar la historia?</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-6 md:gap-8 mb-8 md:mb-12">
+                <div class="bg-slate-800/50 p-4 md:p-6 rounded-xl md:rounded-2xl border border-slate-700">
+                    <div class="text-4xl md:text-6xl font-bold text-amber-400 mb-1 md:mb-2">196</div>
+                    <div class="text-slate-400 text-sm md:text-base">PÁGINAS DE VIAJE TEMPORAL</div>
+                </div>
+                <div class="space-y-3 md:space-y-4">
+                    <div class="bg-slate-800/50 p-4 md:p-6 rounded-xl border-l-4 border-amber-500">
+                        <p class="text-slate-300 italic text-sm md:text-base"> "Compré el libro por la portada, lo terminé en dos noches. Como editor en Penguin Random House, veo manuscritos constantemente. Esta novela tiene ese 'algo' especial que hace que un libro trascienda. La paradoja temporal está tan bien ejecutada que tuve que releer varios pasajes."</p>
+                        <p class="text-amber-400 mt-2 text-xs md:text-sm">- <span>- <strong>Andrés Gómez</strong>, Editor senior<br><em>Penguin Random House México, con 15 años en la industria</em></span></p>
+                    </div>
+                    <div class="bg-slate-800/50 p-4 md:p-6 rounded-xl border-l-4 border-amber-500">
+                        <p class="text-slate-300 italic text-sm md:text-base">"Una oda a Huichapan y a la música como refugio. Sánchez Diego Gabriel captura la esencia de cómo el tiempo se entrelaza con nuestra identidad."</p>
+                        <p class="text-amber-400 mt-2 text-xs md:text-sm">- <span>- <strong>Carlos Ruiz</strong>, Diseñador gráfico, 34 años</span></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="#quiz" 
+                   class="inline-block bg-amber-500 text-slate-900 px-6 md:px-8 py-3 md:py-4 rounded-full font-bold text-base md:text-lg hover:bg-amber-400 transition-all hover:scale-105 btn-responsive">
+                   🎵 Descubre Tu Acorde Literario
+                </a>
+                <p class="text-amber-400 mt-3 md:mt-4 font-semibold text-sm md:text-base">
+                    ⭐ <strong>Acceso exclusivo a la lista de espera</strong> - Sé el primero en conocer la fecha de lanzamiento
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 md:py-12 bg-slate-950 border-t border-slate-800">
+        <div class="container-responsive">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-6 md:mb-8">
+                <div>
+                    <div class="flex items-center gap-2 mb-3 md:mb-4">
+                        <span class="text-amber-400 text-xl md:text-2xl">♫</span>
+                        <span class="font-serif text-lg md:text-xl font-semibold">Bajo el Acorde</span>
+                    </div>
+                    <p class="text-slate-400 text-xs md:text-sm">Una novela donde Bach escribe la partitura del tiempo. <strong>Próximamente.</strong></p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-2 md:mb-4 text-sm md:text-base">Explorar</h4>
+                    <ul class="space-y-1 md:space-y-2 text-slate-400 text-xs md:text-sm">
+                        <li><a href="#resonancia" class="hover:text-amber-400 transition">La Resonancia</a></li>
+                        <li><a href="#quiz" class="hover:text-amber-400 transition">Tu Acorde</a></li>
+                        <li><a href="#fragmento" class="hover:text-amber-400 transition">Fragmento</a></li>
+                        <li><a href="#testimonios" class="hover:text-amber-400 transition">Testimonios</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-2 md:mb-4 text-sm md:text-base">Recursos</h4>
+                    <ul class="space-y-1 md:space-y-2 text-slate-400 text-xs md:text-sm">
+                        <li><a href="#autor" class="hover:text-amber-400 transition">Sobre el Autor</a></li>
+                        <li><a href="mailto:contacto.sdg.author@gmail.com" class="hover:text-amber-400 transition">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-2 md:mb-4 text-sm md:text-base">Contacto</h4>
+                    <ul class="space-y-1 md:space-y-2 text-slate-400 text-xs md:text-sm">
+                        <li><a href="mailto:contacto.sdg.author@gmail.com" class="hover:text-amber-400 transition">contacto.sdg.author@gmail.com</a></li>
+                        <li class="flex gap-3 md:gap-4 mt-2 md:mt-4">
+                            <a href="https://www.facebook.com/diego.perez.gonzalez.906690" class="hover:text-amber-400 transition text-sm md:text-base">FB</a>
+                            <a href="https://www.instagram.com/diegopg03/" class="hover:text-amber-400 transition text-sm md:text-base">IG</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-800 pt-6 md:pt-8">
+                <div class="rights-notice space-y-4">
+                    <div class="text-slate-500 text-sm leading-relaxed">
+                        <p><strong class="text-slate-400">© 2026 Diego Pérez González.</strong> Publicado bajo el seudónimo Sánchez Diego Gabriel. Primera edición, 2026.</p>
+                        <p class="mt-2">Para información: <a href="mailto:contacto.sdg.author@gmail.com" class="text-amber-400 hover:text-amber-300 transition">contacto.sdg.author@gmail.com</a></p>
+                    </div>
+                    <div class="text-center text-slate-500 text-sm italic pt-4">
+                        <p>Gracias por permitirte entrar en este universo literario.</p>
+                    </div>
+                </div>
+                <div class="mt-6 pt-6 border-t border-slate-800">
+                    <p class="copyright text-slate-600 text-xs text-center italic">
+                        "No perdamos nada de nuestro tiempo; quizá los hubo más bellos, pero este es el nuestro"<br>
+                        <span class="text-slate-500 text-xs">— Jean Paul Sartre</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Exit Intent Popup -->
+    <div id="exit-popup" class="fixed inset-0 bg-slate-900/90 z-50 hidden items-center justify-center p-4 no-print">
+        <div class="bg-slate-800 rounded-lg md:rounded-2xl p-4 md:p-6 lg:p-8 max-w-md w-full border border-slate-700 relative card-responsive">
+            <button id="close-popup" class="absolute top-2 right-2 md:top-4 md:right-4 text-slate-400 hover:text-white text-xl md:text-2xl">&times;</button>
+            <div class="text-center">
+                <span class="text-3xl md:text-4xl mb-3 md:mb-4 block">🎼</span>
+                <h3 class="font-serif text-xl md:text-2xl font-bold mb-2">¿Te vas sin descubrir cómo Bach compone esta historia?</h3>
+                <p class="text-slate-300 mb-4 md:mb-6 text-sm md:text-base">Recibe un análisis exclusivo de las estructuras musicales convertidas en narrativa.</p>
+                <a href="#quiz" class="inline-block w-full bg-amber-500 text-slate-900 py-3 rounded-lg font-semibold hover:bg-amber-400 transition btn-responsive text-center">
+                    Descubrir mi perfil literario
+                </a>
+                <p class="text-slate-500 text-xs mt-3 md:mt-4">No spam. Solo música y literatura.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // ========== QUIZ COMPLETAMENTE FUNCIONAL CON ENVÍO DE EMAIL ==========
+            
+            let quizAnswers = {};
+            let currentStep = 1;
+            const totalSteps = 4;
+            
+            // Configuración de resultados
+            const resultProfiles = {
+                // Combinación 1: Clásica + Borges
+                'clasica_borges': {
+                    name: 'El Contrapuntista Metafísico',
+                    description: 'Tu mente aprecia la estructura matemática de la música clásica y la profundidad filosófica de Borges. "Bajo el Acorde del Tiempo" resonará contigo a nivel intelectual y emocional, especialmente en los capítulos donde la arquitectura musical se entrelaza con paradojas temporales.'
+                },
+                // Combinación 2: Jazz + Cortázar
+                'jazz_cortazar': {
+                    name: 'El Improvisador Temporal',
+                    description: 'Te encanta la espontaneidad del jazz y la libertad creativa de Cortázar. Esta novela te ofrecerá esa misma sensación de improvisación controlada dentro de una estructura temporal compleja, donde cada capítulo es una variación sobre un tema.'
+                },
+                // Combinación 3: Folklórica + Márquez
+                'folk_marquez': {
+                    name: 'El Guardián de las Tradiciones Mágicas',
+                    description: 'Valoras las raíces culturales y el realismo mágico latinoamericano. Encontrarás en Huichapan un Pueblo Mágico que respira tradición y misterio, donde lo cotidiano se vuelve extraordinario.'
+                },
+                // Combinación 4: Contemporánea + Woolf
+                'contemporanea_woolf': {
+                    name: 'El Explorador de la Conciencia',
+                    description: 'Prefieres la experimentación y la introspección. Esta novela explorará capas de conciencia y tiempo de manera innovadora, desafiando las convenciones narrativas tradicionales.'
+                },
+                // Default
+                'default': {
+                    name: 'El Viajero Sonoro',
+                    description: 'Tu curiosidad por diferentes géneros y autores te convierte en el lector ideal para esta novela. Apreciarás cómo se entrelazan música, tiempo y narrativa en una experiencia literaria única.'
+                }
+            };
+            
+            // Inicializar el quiz
+            function initQuiz() {
+                const quizSteps = document.querySelectorAll('.quiz-step');
+                const quizOptions = document.querySelectorAll('.quiz-option');
+                const quizResult = document.getElementById('quiz-result');
+                
+                // Reiniciar respuestas
+                quizAnswers = {};
+                currentStep = 1;
+                
+                // Ocultar todos los pasos excepto el primero
+                quizSteps.forEach(step => {
+                    step.classList.add('hidden');
+                    step.classList.remove('active');
+                });
+                
+                // Mostrar primer paso
+                const firstStep = document.querySelector('.quiz-step[data-step="1"]');
+                if (firstStep) {
+                    firstStep.classList.remove('hidden');
+                    firstStep.classList.add('active');
+                }
+                
+                // Ocultar resultado
+                if (quizResult) {
+                    quizResult.classList.add('hidden');
+                }
+                
+                // Mostrar contenedor del quiz
+                const quizContainer = document.getElementById('quiz-container');
+                if (quizContainer) {
+                    quizContainer.classList.remove('hidden');
+                }
+                
+                // Remover clases de selección anteriores
+                quizOptions.forEach(option => {
+                    option.classList.remove('selected', 'bg-amber-500/20', 'border-amber-400');
+                });
+                
+                // Actualizar barra de progreso
+                updateProgressBar(1);
+                
+                // Configurar event listeners para las opciones
+                quizOptions.forEach(option => {
+                    option.removeEventListener('click', handleOptionClick);
+                    option.addEventListener('click', handleOptionClick);
+                });
+                
+                // Configurar botón de reinicio
+                const resetButton = document.getElementById('reset-quiz');
+                if (resetButton) {
+                    resetButton.removeEventListener('click', resetQuiz);
+                    resetButton.addEventListener('click', resetQuiz);
+                }
+            }
+            
+            // Manejar clic en opción del quiz
+            function handleOptionClick(event) {
+                const button = event.currentTarget;
+                const step = button.closest('.quiz-step');
+                const stepNumber = parseInt(step.dataset.step);
+                const optionValue = button.dataset.value;
+                
+                // Guardar respuesta
+                quizAnswers[`step${stepNumber}`] = optionValue;
+                
+                // Remover selección anterior en este paso
+                const stepOptions = step.querySelectorAll('.quiz-option');
+                stepOptions.forEach(opt => {
+                    opt.classList.remove('selected', 'bg-amber-500/20', 'border-amber-400');
+                });
+                
+                // Añadir feedback visual
+                button.classList.add('selected', 'bg-amber-500/20', 'border-amber-400');
+                
+                // Avanzar al siguiente paso después de un breve delay
+                setTimeout(() => {
+                    if (stepNumber < totalSteps) {
+                        goToStep(stepNumber + 1);
+                    } else {
+                        showResult();
+                    }
+                }, 500);
+            }
+            
+            // Ir a un paso específico del quiz
+            function goToStep(stepNumber) {
+                currentStep = stepNumber;
+                
+                // Ocultar todos los pasos
+                document.querySelectorAll('.quiz-step').forEach(step => {
+                    step.classList.add('hidden');
+                    step.classList.remove('active');
+                });
+                
+                // Mostrar paso actual
+                const currentStepElement = document.querySelector(`.quiz-step[data-step="${stepNumber}"]`);
+                if (currentStepElement) {
+                    currentStepElement.classList.remove('hidden');
+                    currentStepElement.classList.add('active');
+                    
+                    // Actualizar barra de progreso
+                    updateProgressBar(stepNumber);
+                    
+                    // Scroll suave al inicio del quiz en móvil
+                    if (window.innerWidth <= 768) {
+                        const quizSection = document.getElementById('quiz');
+                        if (quizSection) {
+                            const navbarHeight = document.getElementById('navbar').offsetHeight;
+                            const quizPosition = quizSection.offsetTop - navbarHeight - 20;
+                            setTimeout(() => {
+                                window.scrollTo({
+                                    top: quizPosition,
+                                    behavior: 'smooth'
+                                });
+                            }, 300);
+                        }
+                    }
+                }
+            }
+            
+            // Actualizar barra de progreso
+            function updateProgressBar(stepNumber) {
+                const progressFill = document.querySelector('.progress-fill');
+                if (progressFill) {
+                    const percentage = (stepNumber / totalSteps) * 100;
+                    progressFill.style.width = `${percentage}%`;
+                }
+            }
+            
+            // Mostrar resultado del quiz
+            function showResult() {
+                // Ocultar pasos del quiz
+                document.querySelectorAll('.quiz-step').forEach(step => {
+                    step.classList.add('hidden');
+                    step.classList.remove('active');
+                });
+                
+                // Mostrar resultado
+                const quizResult = document.getElementById('quiz-result');
+                if (quizResult) {
+                    quizResult.classList.remove('hidden');
+                    
+                    // Determinar perfil basado en respuestas
+                    const profile = calculateProfile();
+                    
+                    // Mostrar resultado
+                    const resultName = document.getElementById('result-name');
+                    const resultDescription = document.getElementById('result-description');
+                    
+                    if (resultName && resultDescription) {
+                        resultName.textContent = profile.name;
+                        resultDescription.textContent = profile.description;
+                    }
+                    
+                    // Llenar campos ocultos con los datos del quiz
+                    document.getElementById('hidden-profile-name').value = profile.name;
+                    document.getElementById('hidden-music-pref').value = quizAnswers.step1 || 'No seleccionado';
+                    document.getElementById('hidden-author-pref').value = quizAnswers.step2 || 'No seleccionado';
+                    document.getElementById('hidden-time-pref').value = quizAnswers.step3 || 'No seleccionado';
+                    document.getElementById('hidden-mexico-pref').value = quizAnswers.step4 || 'No seleccionado';
+                    
+                    // Scroll al resultado en móvil
+                    if (window.innerWidth <= 768) {
+                        setTimeout(() => {
+                            quizResult.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }, 300);
+                    }
+                }
+            }
+            
+            // Calcular perfil basado en respuestas
+            function calculateProfile() {
+                const musicPref = quizAnswers.step1 || 'clasica';
+                const authorPref = quizAnswers.step2 || 'borges';
+                
+                // Crear clave para buscar perfil
+                const profileKey = `${musicPref}_${authorPref}`;
+                
+                // Buscar perfil específico o usar default
+                if (resultProfiles[profileKey]) {
+                    return resultProfiles[profileKey];
+                } else {
+                    // Buscar combinación parcial
+                    for (const [key, profile] of Object.entries(resultProfiles)) {
+                        if (key.startsWith(musicPref) || key.endsWith(authorPref)) {
+                            return profile;
+                        }
+                    }
+                    return resultProfiles.default;
+                }
+            }
+            
+            // Reiniciar quiz
+            function resetQuiz() {
+                initQuiz();
+            }
+            
+            // Inicializar quiz cuando se carga la página
+            initQuiz();
+            
+            // ========== RESTO DEL CÓDIGO ==========
+            
+            // Mobile Menu
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const closeMobileMenu = document.getElementById('close-mobile-menu');
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            
+            function toggleMobileMenu() {
+                mobileMenu.classList.toggle('hidden');
+                document.body.style.overflow = mobileMenu.classList.contains('hidden') ? 'auto' : 'hidden';
+                mobileMenuBtn.setAttribute('aria-expanded', !mobileMenu.classList.contains('hidden'));
+            }
+            
+            mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+            closeMobileMenu.addEventListener('click', toggleMobileMenu);
+            
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    document.body.style.overflow = 'auto';
+                    mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                });
+            });
+            
+            // Navbar scroll effect
+            const navbar = document.getElementById('navbar');
+            let lastScroll = 0;
+            
+            window.addEventListener('scroll', () => {
+                const currentScroll = window.pageYOffset;
+                
+                if (window.innerWidth > 768) {
+                    if (currentScroll > 100) {
+                        navbar.classList.add('bg-slate-900');
+                        navbar.classList.remove('bg-slate-900/90');
+                    } else {
+                        navbar.classList.remove('bg-slate-900');
+                        navbar.classList.add('bg-slate-900/90');
+                    }
+                }
+                
+                if (window.innerWidth <= 768) {
+                    if (currentScroll > lastScroll && currentScroll > 100) {
+                        navbar.style.transform = 'translateY(-100%)';
+                    } else {
+                        navbar.style.transform = 'translateY(0)';
+                    }
+                }
+                
+                lastScroll = currentScroll;
+            });
+            
+            // Tooltip functionality
+            const tooltipContainers = document.querySelectorAll('.tooltip-container');
+            
+            tooltipContainers.forEach(container => {
+                if ('ontouchstart' in window) {
+                    // Para dispositivos táctiles
+                    container.addEventListener('touchstart', function(e) {
+                        e.preventDefault();
+                        const tooltip = this.querySelector('.tooltip-content');
+                        const allTooltips = document.querySelectorAll('.tooltip-content');
+                        
+                        allTooltips.forEach(t => {
+                            if (t !== tooltip) {
+                                t.style.visibility = 'hidden';
+                                t.style.opacity = '0';
+                            }
+                        });
+                        
+                        if (tooltip.style.visibility === 'visible') {
+                            tooltip.style.visibility = 'hidden';
+                            tooltip.style.opacity = '0';
+                        } else {
+                            tooltip.style.visibility = 'visible';
+                            tooltip.style.opacity = '1';
+                        }
+                    });
+                }
+            });
+            
+            // Create particles
+            function createParticles() {
+                const container = document.getElementById('particles-container');
+                if (!container) return;
+                
+                const particleCount = window.innerWidth <= 768 ? 15 : 30;
+                
+                for (let i = 0; i < particleCount; i++) {
+                    const particle = document.createElement('div');
+                    particle.classList.add('particle');
+                    
+                    const size = window.innerWidth <= 768 ? Math.random() * 3 + 1 : Math.random() * 4 + 1;
+                    const posX = Math.random() * 100;
+                    const posY = Math.random() * 100;
+                    const delay = Math.random() * 5;
+                    const duration = Math.random() * 10 + 10;
+                    
+                    particle.style.width = `${size}px`;
+                    particle.style.height = `${size}px`;
+                    particle.style.left = `${posX}%`;
+                    particle.style.top = `${posY}%`;
+                    particle.style.animation = `float ${duration}s ease-in-out ${delay}s infinite`;
+                    particle.style.opacity = Math.random() * 0.5 + 0.1;
+                    
+                    container.appendChild(particle);
+                }
+            }
+            
+            createParticles();
+            
+            // Smooth scrolling
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    if (this.getAttribute('href') === '#') return;
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        e.preventDefault();
+                        const navbarHeight = navbar.offsetHeight;
+                        const targetPosition = targetElement.offsetTop - navbarHeight - 20;
+                        
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Lazy loading de imágenes
+            const images = document.querySelectorAll('img');
+            images.forEach(img => {
+                img.loading = 'lazy';
+            });
+        });
+    </script>
+</body>
+</html>
