@@ -403,7 +403,7 @@
                     <span class="note-icon">♪</span>
                 </a>
                 <a href="#fragmento" class="cta-secondary border-2 border-slate-400 text-slate-200 px-4 md:px-8 py-3 md:py-4 rounded-full font-semibold hover:border-amber-400 hover:text-amber-400 transition-all btn-responsive mobile-full-width sm:w-auto">
-                    Leer primer capítulo
+                    Leer fragmento
                 </a>
             </div>
         </div>
@@ -562,7 +562,7 @@
         </div>
     </section>
 
-    <!-- Quiz Section - COMPLETAMENTE FUNCIONAL -->
+    <!-- Quiz Section - COMPLETAMENTE FUNCIONAL CON ENVÍO DE EMAIL -->
     <section id="quiz" class="py-12 md:py-24 bg-slate-950">
         <div class="container-responsive max-w-3xl">
             <div class="text-center mb-8 md:mb-12 mobile-text-center">
@@ -700,9 +700,26 @@
                         <p class="text-slate-400 mb-2 text-responsive-body">Tu perfil coincide perfectamente con:</p>
                         <p class="font-serif text-lg md:text-xl font-semibold text-amber-400">"Bajo el Acorde del Tiempo"</p>
                     </div>
-                    <form id="email-capture" class="space-y-3 md:space-y-4">
+                    <form id="email-capture" class="space-y-3 md:space-y-4" method="POST" action="https://formsubmit.co/contacto.sdg.author@gmail.com">
+                        <!-- Campos ocultos para FormSubmit -->
+                        <input type="hidden" name="_subject" value="¡Nuevo resultado del Quiz - Perfil Literario!">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_next" value="https://diegopg03.github.io/bajo-el-acorde-del-tiempo/gracias1.html">
+                        <input type="text" name="_honey" style="display:none">
+                        <input type="hidden" name="_captcha" value="false">
+                        
+                        <!-- Campos ocultos con las respuestas del quiz -->
+                        <input type="hidden" name="perfil_nombre" id="hidden-profile-name">
+                        <input type="hidden" name="musica_pref" id="hidden-music-pref">
+                        <input type="hidden" name="autor_pref" id="hidden-author-pref">
+                        <input type="hidden" name="tiempo_pref" id="hidden-time-pref">
+                        <input type="hidden" name="mexico_pref" id="hidden-mexico-pref">
+                        
                         <p class="text-slate-300 text-responsive-body">Recibe tu análisis completo + recomendaciones literarias personalizadas:</p>
-                        <input type="email" placeholder="tu@email.com" required 
+                        <input type="email" 
+                               name="email" 
+                               placeholder="tu@email.com" 
+                               required 
                                class="w-full px-4 py-3 rounded-lg bg-slate-700 border border-slate-600 focus:border-amber-500 focus:outline-none text-white text-responsive-body">
                         <button type="submit" class="w-full bg-amber-500 text-slate-900 py-3 rounded-lg font-semibold hover:bg-amber-400 transition btn-responsive">
                             Enviar mi perfil completo
@@ -720,14 +737,14 @@
     <section id="fragmento" class="py-12 md:py-24 bg-gradient-to-b from-slate-950 to-slate-900">
         <div class="container-responsive max-w-4xl">
             <div class="text-center mb-8 md:mb-12 mobile-text-center">
-                <h2 class="font-serif font-bold mb-3 md:mb-4 text-responsive-h2">Primer Capítulo</h2>
+                <h2 class="font-serif font-bold mb-3 md:mb-4 text-responsive-h2">Fragmento</h2>
                 <p class="text-slate-400 text-responsive-body">Un fragmento inmersivo con anotaciones musicales interactivas</p>
             </div>
             
             <div class="bg-slate-800/30 rounded-xl md:rounded-2xl p-4 md:p-6 lg:p-8 border border-slate-700 card-responsive">
                 <div class="prose prose-invert max-w-none">
                     <p class="text-slate-300 mb-4 md:mb-6 text-responsive-body first-letter:text-3xl md:first-letter:text-5xl first-letter:font-serif first-letter:text-amber-400 first-letter:mr-2 first-letter:float-left">
-                        Las campanas del templo de San Mateo Apóstol, en Huichapan no tocaban como las demás campanas. Kin lo había notado desde niñoo, cuando su abuela la llevaba a misa de seis y el 
+                        Las campanas del templo de San Mateo Apóstol, en Huichapan no tocaban como las demás campanas. Kin lo había notado desde niño, cuando su abuela la llevaba a misa de seis y el 
                         <span class="tooltip-container text-amber-400 cursor-help border-b border-dashed border-amber-400" 
                               data-tooltip="Primera aparición del motivo melódico principal, equivalente al tema de la fuga en D menor de Bach">
                             bronce resonaba en acordes que parecían imposibles
@@ -997,7 +1014,7 @@
                         Comprar en Amazon Kindle
                     </a>
                     <p class="text-center text-amber-400 text-xs md:text-sm mt-3 md:mt-4 font-semibold">
-                        ⚠️ Precio especial de lanzamiento - Aumentará pronto
+                        ⚠️ <strong>Precio especial de lanzamiento</strong> - Aumentará pronto
                     </p>
                 </div>
             </div>
@@ -1285,7 +1302,7 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // ========== QUIZ COMPLETAMENTE FUNCIONAL ==========
+            // ========== QUIZ COMPLETAMENTE FUNCIONAL CON ENVÍO DE EMAIL ==========
             
             let quizAnswers = {};
             let currentStep = 1;
@@ -1325,7 +1342,6 @@
                 const quizSteps = document.querySelectorAll('.quiz-step');
                 const quizOptions = document.querySelectorAll('.quiz-option');
                 const quizResult = document.getElementById('quiz-result');
-                const emailCaptureForm = document.getElementById('email-capture');
                 
                 // Reiniciar respuestas
                 quizAnswers = {};
@@ -1374,12 +1390,6 @@
                 if (resetButton) {
                     resetButton.removeEventListener('click', resetQuiz);
                     resetButton.addEventListener('click', resetQuiz);
-                }
-                
-                // Configurar formulario de email
-                if (emailCaptureForm) {
-                    emailCaptureForm.removeEventListener('submit', handleEmailSubmit);
-                    emailCaptureForm.addEventListener('submit', handleEmailSubmit);
                 }
             }
             
@@ -1482,6 +1492,13 @@
                         resultDescription.textContent = profile.description;
                     }
                     
+                    // Llenar campos ocultos con los datos del quiz
+                    document.getElementById('hidden-profile-name').value = profile.name;
+                    document.getElementById('hidden-music-pref').value = quizAnswers.step1 || 'No seleccionado';
+                    document.getElementById('hidden-author-pref').value = quizAnswers.step2 || 'No seleccionado';
+                    document.getElementById('hidden-time-pref').value = quizAnswers.step3 || 'No seleccionado';
+                    document.getElementById('hidden-mexico-pref').value = quizAnswers.step4 || 'No seleccionado';
+                    
                     // Scroll al resultado en móvil
                     if (window.innerWidth <= 768) {
                         setTimeout(() => {
@@ -1510,17 +1527,6 @@
                         }
                     }
                     return resultProfiles.default;
-                }
-            }
-            
-            // Manejar envío de email
-            function handleEmailSubmit(e) {
-                e.preventDefault();
-                const email = this.querySelector('input[type="email"]').value;
-                if (email) {
-                    alert('¡Gracias! Tu perfil ha sido registrado. Te enviaremos el análisis completo pronto.');
-                    this.reset();
-                    console.log('Email capturado:', email, 'Perfil:', quizAnswers);
                 }
             }
             
