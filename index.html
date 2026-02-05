@@ -2,54 +2,49 @@
 <html lang="es">
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WB71XXRPV8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-WB71XXRPV8');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WB71XXRPV8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-WB71XXRPV8');
+    </script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Orden: Bajo el Acorde del Tiempo | Novela de Realismo y Ficción Temporal</title>
-    <meta name="description" content="ordena la novela de Sánchez Diego Gabriel que fusiona realismo mágico, música y los secretos de Huichapan. Una historia donde el tiempo se detiene y la música sobrevive al olvido.">
+    <title>Bajo el Acorde del Tiempo | Sánchez Diego Gabriel</title>
+    <meta name="description" content="Una novela donde las estructuras de Bach se convierten en narrativa y el tiempo revela conexiones que desafían los siglos. Una exploración del realismo mágico mexicano.">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.bajoelacordedeltiempo.com/preorden">
+    <meta property="og:url" content="https://www.bajoelacordedeltiempo.com/">
     <meta property="og:title" content="Bajo el Acorde del Tiempo - Novela de Sánchez Diego Gabriel">
-    <meta property="og:description" content="Una historia donde la música es la única que sobrevive al olvido. Pre-ordena ahora en Amazon.">
+    <meta property="og:description" content="Una historia donde la música es la única que sobrevive al olvido.">
     <meta property="og:image" content="https://www.bajoelacordedeltiempo.com/assets/og-image.jpg">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.bajoelacordedeltiempo.com/preorden">
-    <meta property="twitter:title" content="Pre-Orden: Bajo el Acorde del Tiempo">
-    <meta property="twitter:description" content="Novela que fusiona realismo mágico, música y los secretos de Huichapan. Disponible en Amazon.">
+    <meta property="twitter:url" content="https://www.bajoelacordedeltiempo.com/">
+    <meta property="twitter:title" content="Bajo el Acorde del Tiempo - Novela de Sánchez Diego Gabriel">
+    <meta property="twitter:description" content="Novela que fusiona realismo mágico, música y los secretos de Huichapan.">
     <meta property="twitter:image" content="https://www.bajoelacordedeltiempo.com/assets/twitter-image.jpg">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
     <style>
         :root {
-            --primary-color: #1a1a2e;
-            --secondary-color: #c9a96e;
-            --accent-color: #8b4513;
-            --text-color: #333333;
-            --light-bg: #f8f5f0;
-            --white: #ffffff;
-            --danger: #dc3545;
-            --success: #28a745;
-            --amazon-orange: #ff9900;
-            --font-heading: 'Crimson Text', serif;
-            --font-body: 'Inter', sans-serif;
+            --primary-dark: #0f172a;
+            --secondary-gold: #c9a96e;
+            --accent-amber: #fbbf24;
         }
         
         * {
@@ -59,1085 +54,1249 @@
         }
         
         body {
-            font-family: var(--font-body);
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--light-bg);
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #e2e8f0;
+            overflow-x: hidden;
         }
         
-        h1, h2, h3, h4 {
-            font-family: var(--font-heading);
-            font-weight: 700;
-            color: var(--primary-color);
-            margin-bottom: 1rem;
+        .font-serif {
+            font-family: 'Cormorant Garamond', serif;
         }
         
-        h1 {
-            font-size: 2.8rem;
-            line-height: 1.2;
+        /* Animaciones personalizadas */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
         
-        h2 {
-            font-size: 2.2rem;
-            border-bottom: 2px solid var(--secondary-color);
-            padding-bottom: 0.5rem;
-            margin-top: 3rem;
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
         }
         
-        h3 {
-            font-size: 1.6rem;
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
         }
         
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
         }
         
-        /* Header */
-        header {
-            background-color: var(--primary-color);
-            color: var(--white);
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .logo {
-            font-family: var(--font-heading);
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: var(--secondary-color);
-            text-decoration: none;
-        }
-        
-        .logo span {
-            color: var(--white);
-        }
-        
-        .cta-header {
-            background-color: var(--secondary-color);
-            color: var(--primary-color);
-            padding: 0.8rem 1.5rem;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s;
-        }
-        
-        .cta-header:hover {
-            background-color: #e0c070;
-            transform: translateY(-2px);
-        }
-        
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(rgba(26, 26, 46, 0.85), rgba(26, 26, 46, 0.9)), 
-                        url('https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070') center/cover no-repeat;
-            color: var(--white);
-            padding: 5rem 0;
-            text-align: center;
-        }
-        
-        .hero h1 {
-            color: var(--white);
-            font-size: 3.2rem;
-            margin-bottom: 1.5rem;
-        }
-        
-        .hero h2 {
-            color: var(--secondary-color);
-            border: none;
-            font-size: 1.5rem;
-            font-weight: 300;
-        }
-        
-        .cta-buttons {
-            margin: 2.5rem 0;
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        
-        .btn-primary, .btn-secondary, .btn-amazon {
-            padding: 1rem 2rem;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: 600;
-            display: inline-block;
-            transition: all 0.3s;
-        }
-        
-        .btn-primary {
-            background-color: var(--secondary-color);
-            color: var(--primary-color);
-            font-size: 1.1rem;
-        }
-        
-        .btn-primary:hover {
-            background-color: #e0c070;
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-        }
-        
-        .btn-secondary {
-            background-color: transparent;
-            color: var(--white);
-            border: 2px solid var(--secondary-color);
-        }
-        
-        .btn-secondary:hover {
-            background-color: rgba(201, 169, 110, 0.1);
-        }
-        
-        .btn-amazon {
-            background-color: var(--amazon-orange);
-            color: var(--primary-color);
-            border: none;
-        }
-        
-        .btn-amazon:hover {
-            background-color: #ffad33;
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-        }
-        
-        .trust-badges {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            flex-wrap: wrap;
-            margin-top: 2rem;
-        }
-        
-        .trust-badges span {
-            background-color: rgba(255,255,255,0.1);
-            padding: 0.8rem 1.2rem;
-            border-radius: 4px;
-            border-left: 3px solid var(--secondary-color);
-        }
-        
-        /* Main Content */
-        main {
-            padding: 4rem 0;
-        }
-        
-        section {
-            margin-bottom: 4rem;
-        }
-        
-        /* About Book */
-        .book-intro {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            align-items: center;
-            margin-top: 2rem;
-        }
-        
-        .book-cover {
-            text-align: center;
-        }
-        
-        .book-cover-img {
-            max-width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-        }
-        
-        .quote {
-            font-size: 1.5rem;
-            font-style: italic;
-            text-align: center;
-            margin: 2rem 0;
-            padding: 2rem;
-            background-color: var(--white);
-            border-radius: 8px;
-            border-left: 5px solid var(--secondary-color);
-        }
-        
-        .quote-author {
-            display: block;
-            margin-top: 1rem;
-            font-style: normal;
-            font-size: 1rem;
-            color: var(--accent-color);
-        }
-        
-        /* Synopsis */
-        .synopsis-section {
-            background-color: var(--white);
-            padding: 3rem;
-            border-radius: 12px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-        }
-        
-        .synopsis-section p {
-            margin-bottom: 1.5rem;
-            font-size: 1.1rem;
-            line-height: 1.8;
-        }
-        
-        .keywords {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            margin-top: 2rem;
-        }
-        
-        .keyword-tag {
-            background-color: var(--light-bg);
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            border: 1px solid #ddd;
-        }
-        
-        .music-tag { border-left: 4px solid #4a90e2; }
-        .culture-tag { border-left: 4px solid #7b68ee; }
-        .philosophy-tag { border-left: 4px solid #20b2aa; }
-        .mexico-tag { border-left: 4px solid #cd853f; }
-        
-        /* About Author */
-        .author-section {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 3rem;
-            align-items: center;
-            background-color: var(--white);
-            padding: 3rem;
-            border-radius: 12px;
-        }
-        
-        .author-photo {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 5px solid var(--secondary-color);
-            margin: 0 auto;
-            display: block;
-        }
-        
-        .author-info h3 {
-            color: var(--secondary-color);
-        }
-        
-        .author-real-name {
-            font-style: italic;
-            color: #666;
-            margin-bottom: 1rem;
-        }
-        
-        /* Playlist Bonus */
-        .playlist-section {
-            text-align: center;
-            padding: 3rem;
-            background: linear-gradient(135deg, var(--primary-color), #2a2a3e);
-            color: white;
-            border-radius: 12px;
-        }
-        
-        .playlist-section h2 {
-            color: white;
-            border: none;
-        }
-        
-        .playlist-icon {
-            font-size: 4rem;
-            margin-bottom: 1.5rem;
-        }
-        
-        .playlist-description {
-            max-width: 600px;
-            margin: 0 auto 2rem;
-            font-size: 1.1rem;
-        }
-        
-        .spotify-button {
-            display: inline-block;
-            background-color: #1DB954;
-            color: white;
-            padding: 1rem 2rem;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s;
-        }
-        
-        .spotify-button:hover {
-            background-color: #1ed760;
-            transform: scale(1.05);
-        }
-        
-        /* Pricing */
-        .pricing-section {
-            background-color: var(--white);
-            padding: 3rem;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            margin-top: 4rem;
-        }
-        
-        .deadline {
-            text-align: center;
-            background-color: rgba(40, 167, 69, 0.1);
-            padding: 1rem;
-            border-radius: 4px;
-            margin: 1rem 0 2rem;
-            font-weight: 600;
-            border-left: 4px solid var(--success);
-        }
-        
-        .pricing-cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-        
-        .pricing-card {
-            border: 2px solid #e0e0e0;
-            border-radius: 8px;
-            padding: 2rem;
-            position: relative;
-            transition: all 0.3s;
-        }
-        
-        .pricing-card:hover {
-            border-color: var(--secondary-color);
-            transform: translateY(-5px);
-        }
-        
-        .pricing-card.popular {
-            border-color: var(--secondary-color);
-            transform: scale(1.05);
-        }
-        
-        .popular-badge {
+        /* Hero Section con partículas */
+        .hero-particles {
             position: absolute;
-            top: -12px;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        .particle {
+            position: absolute;
+            background: rgba(201, 169, 110, 0.3);
+            border-radius: 50%;
+        }
+        
+        /* Estilos personalizados */
+        .gradient-text {
+            background: linear-gradient(135deg, #fbbf24, #c9a96e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .border-gold {
+            border-color: #c9a96e;
+        }
+        
+        .bg-dark-gradient {
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+        }
+        
+        /* Card hover effects */
+        .hover-card {
+            transition: all 0.3s ease;
+        }
+        
+        .hover-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Tooltip styling */
+        .tooltip-container {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .tooltip-content {
+            visibility: hidden;
+            position: absolute;
+            z-index: 100;
+            bottom: 125%;
             left: 50%;
             transform: translateX(-50%);
-            background-color: var(--secondary-color);
-            color: var(--primary-color);
-            padding: 0.5rem 1.5rem;
-            border-radius: 20px;
-            font-weight: 700;
-            font-size: 0.9rem;
-        }
-        
-        .pricing-header {
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-        
-        .price {
-            margin: 1rem 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        
-        .price-main {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--primary-color);
-        }
-        
-        .price-secondary {
-            font-size: 1.2rem;
-            color: #666;
-        }
-        
-        .book-specs {
-            text-align: center;
-            color: #666;
-            font-size: 0.9rem;
-            margin-bottom: 1.5rem;
-        }
-        
-        .features {
-            list-style: none;
-            margin-bottom: 2rem;
-        }
-        
-        .features li {
-            padding: 0.5rem 0;
-            border-bottom: 1px solid #f0f0f0;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        
-        .btn-purchase {
-            display: block;
-            width: 100%;
-            padding: 1rem;
-            background-color: var(--primary-color);
-            color: white;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 4px;
-            font-weight: 700;
-            font-size: 1.1rem;
-            transition: all 0.3s;
-            margin-bottom: 1rem;
-        }
-        
-        .btn-purchase:hover {
-            background-color: #2a2a3e;
-        }
-        
-        .popular-btn {
-            background-color: var(--secondary-color);
-            color: var(--primary-color);
-        }
-        
-        .popular-btn:hover {
-            background-color: #e0c070;
-        }
-        
-        .amazon-btn {
-            background-color: var(--amazon-orange);
-            color: var(--primary-color);
-            border: none;
-        }
-        
-        .amazon-btn:hover {
-            background-color: #ffad33;
-        }
-        
-        .shipping-note, .limited, .digital-note {
-            font-size: 0.9rem;
-            text-align: center;
-            color: #666;
-        }
-        
-        .limited {
-            color: var(--danger);
-            font-weight: 600;
-        }
-        
-        .digital-note {
-            color: var(--success);
-            font-weight: 600;
-            background-color: rgba(40, 167, 69, 0.1);
-            padding: 0.5rem;
-            border-radius: 4px;
-            margin-top: 0.5rem;
-        }
-        
-        /* Book Details */
-        .details-section {
-            background-color: var(--white);
-            padding: 2rem;
-            border-radius: 8px;
-            margin-top: 2rem;
-        }
-        
-        .details-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            margin-top: 1.5rem;
-        }
-        
-        .detail-item {
-            padding: 1rem;
-            background-color: var(--light-bg);
+            background-color: #1e293b;
+            color: #e2e8f0;
+            padding: 8px 12px;
             border-radius: 6px;
+            font-size: 0.875rem;
+            white-space: nowrap;
+            border: 1px solid #c9a96e;
+            opacity: 0;
+            transition: opacity 0.3s;
         }
         
-        .detail-label {
-            font-weight: 600;
-            color: var(--accent-color);
-            display: block;
-            margin-bottom: 0.3rem;
+        .tooltip-container:hover .tooltip-content {
+            visibility: visible;
+            opacity: 1;
         }
         
-        /* Amazon CTA */
-        .amazon-cta {
-            text-align: center;
-            padding: 2rem;
-            background-color: #f8f8f8;
-            border-radius: 12px;
-            border: 2px dashed #ddd;
-            margin: 2rem 0;
+        /* Quiz styling */
+        .quiz-option {
+            transition: all 0.2s ease;
         }
         
-        .amazon-logo {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
+        .quiz-option:hover {
+            background-color: rgba(201, 169, 110, 0.1);
+            border-color: #c9a96e;
         }
         
-        /* Final CTA */
-        .final-cta {
-            text-align: center;
-            background: linear-gradient(135deg, var(--primary-color), #2a2a3e);
-            color: white;
-            padding: 4rem 2rem;
-            border-radius: 12px;
-            margin-top: 4rem;
+        /* Mobile menu */
+        .mobile-menu {
+            transition: all 0.3s ease;
         }
         
-        .final-cta h2 {
-            color: white;
-            border: none;
-            font-size: 2.5rem;
-        }
-        
-        .social-proof {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 3rem;
-            margin: 3rem 0;
-            align-items: center;
-        }
-        
-        .counter {
-            background-color: rgba(255,255,255,0.1);
-            padding: 2rem;
-            border-radius: 8px;
-            border: 2px solid var(--secondary-color);
-        }
-        
-        .counter-number {
-            font-size: 3.5rem;
-            font-weight: 700;
-            color: var(--secondary-color);
-        }
-        
-        .counter-label {
-            font-size: 0.9rem;
-            opacity: 0.9;
-        }
-        
-        .testimonial-scroll {
-            text-align: left;
-        }
-        
-        .testimonial-tweet {
-            background-color: rgba(255,255,255,0.1);
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin-bottom: 1rem;
-            border-left: 3px solid var(--secondary-color);
-            font-style: italic;
-        }
-        
-        .testimonial-tweet span {
-            display: block;
-            margin-top: 0.5rem;
-            font-style: normal;
-            font-size: 0.9rem;
-            opacity: 0.8;
-        }
-        
-        .final-buttons {
-            margin-top: 2rem;
-        }
-        
-        .btn-primary-large {
-            background-color: var(--secondary-color);
-            color: var(--primary-color);
-            padding: 1.2rem 3rem;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 1.2rem;
-            display: inline-block;
-            margin-bottom: 1rem;
-            transition: all 0.3s;
-        }
-        
-        .btn-primary-large:hover {
-            background-color: #e0c070;
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-        }
-        
-        .urgency-message {
-            color: var(--secondary-color);
-            font-weight: 600;
-        }
-        
-     /* Footer */
-        footer {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 3rem 0;
-            margin-top: 4rem;
-            text-align: center;
-        }
-        
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin: 2rem 0;
-            flex-wrap: wrap;
-        }
-        
-        .footer-links a {
-            color: var(--secondary-color);
-            text-decoration: none;
-        }
-        
-        .copyright {
-            opacity: 0.7;
-            font-size: 0.9rem;
-            margin-top: 2rem;
-        }
-        
-        .legal-note {
-            font-size: 0.8rem;
-            opacity: 0.6;
-            max-width: 800px;
-            margin: 1rem auto;
-            line-height: 1.4;
-        }
-        
-        .rights-notice {
-            font-size: 0.7rem;
-            opacity: 0.5;
-            max-width: 800px;
-            margin: 2rem auto 0;
-            line-height: 1.3;
-            padding: 1rem;
-            border-top: 1px solid rgba(255,255,255,0.1);
-        }
-        
-        /* Responsive */
+        /* Responsive adjustments */
         @media (max-width: 768px) {
-            h1 {
-                font-size: 2.2rem;
-            }
-            
-            h2 {
-                font-size: 1.8rem;
-            }
-            
-            .hero h1 {
+            .hero-title {
                 font-size: 2.5rem;
             }
             
-            .cta-buttons {
-                flex-direction: column;
-                align-items: center;
+            .section-padding {
+                padding: 3rem 1rem;
             }
-            
-            .btn-primary, .btn-secondary, .btn-amazon {
-                width: 100%;
-                max-width: 300px;
-                text-align: center;
-            }
-            
-            .trust-badges {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .book-intro {
-                grid-template-columns: 1fr;
-            }
-            
-            .author-section {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-            
-            .social-proof {
-                grid-template-columns: 1fr;
-            }
-            
-            .pricing-card.popular {
-                transform: none;
-            }
-            
-            .pricing-cards {
-                grid-template-columns: 1fr;
-            }
+        }
+        
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
         }
     </style>
 </head>
-<body>
-    <!-- Header -->
-    <header>
-        <div class="container header-container">
-            <a href="#" class="logo">Bajo el <span>Acorde del Tiempo</span></a>
-            <a href="#preorden" class="cta-header">COMPRAR EN AMAZON</a>
+<body class="bg-slate-900 text-slate-100">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-slate-900/90 backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="logo flex items-center gap-2">
+                <span class="text-amber-400 text-2xl">♫</span>
+                <span class="font-serif text-xl font-semibold">Bajo el Acorde del Tiempo</span>
+            </a>
+            <div class="hidden md:flex items-center gap-8 text-sm">
+                <a href="#resonancia" class="nav-link hover:text-amber-400 transition">La Resonancia</a>
+                <a href="#para-quien" class="nav-link hover:text-amber-400 transition">Para Quién</a>
+                <a href="#quiz" class="nav-link hover:text-amber-400 transition">Tu Acorde</a>
+                <a href="#fragmento" class="nav-link hover:text-amber-400 transition">Fragmento</a>
+                <a href="#testimonios" class="nav-link hover:text-amber-400 transition">Testimonios</a>
+                <a href="#compra" class="cta-nav bg-amber-500 text-slate-900 px-4 py-2 rounded-full font-medium hover:bg-amber-400 transition">Comprar</a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden text-2xl text-amber-400">☰</button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 bg-slate-900/95 z-40 hidden flex-col items-center justify-center gap-8 text-xl">
+        <a href="#resonancia" class="mobile-link text-slate-300 hover:text-amber-400 transition">La Resonancia</a>
+        <a href="#para-quien" class="mobile-link text-slate-300 hover:text-amber-400 transition">Para Quién</a>
+        <a href="#quiz" class="mobile-link text-slate-300 hover:text-amber-400 transition">Tu Acorde</a>
+        <a href="#fragmento" class="mobile-link text-slate-300 hover:text-amber-400 transition">Fragmento</a>
+        <a href="#testimonios" class="mobile-link text-slate-300 hover:text-amber-400 transition">Testimonios</a>
+        <a href="#compra" class="mobile-link bg-amber-500 text-slate-900 px-6 py-3 rounded-full font-semibold hover:bg-amber-400 transition">Comprar</a>
+    </div>
+
+    <!-- Hero Section -->
+    <header id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
+        <!-- Fondo con partículas -->
+        <div class="absolute inset-0 bg-gradient-to-b from-slate-800 via-slate-900 to-slate-950"></div>
+        <div class="hero-particles" id="particles-container"></div>
+        
+        <!-- Contenido principal -->
+        <div class="relative z-10 text-center px-6 max-w-4xl mx-auto animate-fade-in">
+            <p class="text-amber-400 font-medium tracking-widest uppercase mb-4">Una novela de Sánchez Diego Gabriel</p>
+            <h1 class="font-serif text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                La primera novela donde <span class="text-amber-400">Bach</span> compone la estructura temporal
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-300 mb-8 max-w-2xl mx-auto">
+                Donde las estructuras de Bach se convierten en narrativa y el tiempo revela conexiones que desafían los siglos. Una exploración narrativa multidimensional de Huichapan.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#quiz" class="cta-primary bg-amber-500 text-slate-900 px-8 py-4 rounded-full font-semibold text-lg hover:bg-amber-400 transition-all hover:scale-105 flex items-center justify-center gap-2">
+                    <span>Descubre tu acorde literario</span>
+                    <span class="note-icon">♪</span>
+                </a>
+                <a href="#fragmento" class="cta-secondary border-2 border-slate-400 text-slate-200 px-8 py-4 rounded-full font-semibold text-lg hover:border-amber-400 hover:text-amber-400 transition-all">
+                    Leer primer capítulo
+                </a>
+            </div>
+        </div>
+        
+        <!-- Indicador de scroll -->
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-float">
+            <a href="#resonancia" class="text-slate-400 hover:text-amber-400 transition">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+            </a>
         </div>
     </header>
-    
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>UNA NOVELA QUE NO SE LEE<br>SE ESCUCHA</h1>
-            <h2>Descubre la historia donde la música es la única que sobrevive al olvido</h2>
-             <div class="cta-buttons">
-                <a href="#preorden" class="btn-amazon">📗 COMPRAR EN AMAZON →</a>
-            </div>
-            
-            <div class="trust-badges">
-                <span>🎵 <strong>Incluye Playlist Exclusiva</strong></span>
-                <span>⭐ <strong>Novela de Realismo y Ficción Temporal</strong></span>
-                <span>📖 <strong>Disponible en Físico y Digital</strong></span>
+
+    <!-- Pain Point Section -->
+    <section class="py-16 bg-gradient-to-b from-slate-950 to-slate-900">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <p class="text-2xl md:text-3xl font-serif text-slate-300 italic">
+                "¿Cansado de ficción superficial? <span class="text-amber-400">Esta novela ofrece la profundidad que buscas.</span>"
+            </p>
+        </div>
+    </section>
+
+    <!-- Book Intro Section -->
+    <section id="book-intro" class="py-24 bg-slate-900">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="flex justify-center">
+                    <div class="relative">
+                        <img src="https://diegopg03.github.io/bajo-el-acorde-del-tiempo/PORTADA.png" 
+                             alt="Portada del libro Bajo el Acorde del Tiempo" 
+                             class="rounded-2xl shadow-2xl hover-card max-w-md">
+                        <div class="absolute -bottom-4 -right-4 bg-amber-500 text-slate-900 px-4 py-2 rounded-lg font-serif text-lg font-bold">
+                            Edición 2026
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="font-serif text-4xl md:text-5xl font-bold mb-6">Bajo el Acorde del Tiempo</h2>
+                    <p class="text-slate-300 text-lg mb-6">
+                        Una novela de <strong class="text-amber-400">realismo y ficción temporal</strong> que te transportará a Huichapan, un Pueblo Mágico en México, donde el tiempo se detiene, se confunde y vuelve a empezar.
+                    </p>
+                    <div class="bg-slate-800/50 p-6 rounded-xl border-l-4 border-amber-500 mb-6">
+                        <p class="font-serif text-xl italic text-slate-200">
+                            "La música es la única que sobrevive al olvido."
+                        </p>
+                        <p class="text-amber-400 mt-2">— Sánchez Diego Gabriel</p>
+                    </div>
+                    <p class="text-slate-300">
+                        Una obra donde convergen la música, la identidad y los hilos invisibles que conectan los instantes de una vida. Una exploración poética del ritmo íntimo con el que cada persona enfrenta su propia historia.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
-    
-    <!-- Main Content -->
-    <main class="container">
-        <!-- Book Intro -->
-        <section class="book-intro">
-            <div class="book-cover">
-                <img src="https://diegopg03.github.io/bajo-el-acorde-del-tiempo/PORTADA.png" alt="Portada del libro Bajo el Acorde del Tiempo" class="book-cover-img">
-            </div>
-            
-            <div class="book-description">
-                <h2>Bajo el Acorde del Tiempo</h2>
-                <p><strong>Una novela de realismo y ficción temporal</strong> que te transportará a Huichapan, un Pueblo Mágico en México, donde el tiempo se detiene, se confunde y vuelve a empezar.</p>
-                
-                <div class="quote">
-                    "La música es la única que sobrevive al olvido."
-                    <span class="quote-author">— Sánchez Diego Gabriel </span>
-                    <a href="#preorden" class="btn-amazon">📗 COMPRAR EN AMAZON →</a>
-                    <a href="#sinopsis" class="btn-secondary">▶ DESCUBRIR LA HISTORIA</a>
-                </div>
-                
-                <p>Una obra donde convergen la música, la identidad y los hilos invisibles que conectan los instantes de una vida. Una exploración poética del ritmo íntimo con el que cada persona enfrenta su propia historia.</p>
-            </div>
-            
-        </section>
-        
-        <!-- Synopsis -->
-        <section id="sinopsis" class="synopsis-section">
-            <h2>SINOPSIS</h2>
-            <p><strong>Bajo el Acorde del Tiempo</strong> es mucho más que una novela: es la historia de un pueblo y su gente, una oda a Huichapan, un tributo a la música como brújula y refugio, y un viaje inolvidable hacia la esperanza que resiste incluso al olvido.</p>
-            
-            <p>Un hombre atrapado entre la pérdida y el desencanto descubre la llave a un secreto capaz de desafiar los siglos. Al otro lado del tiempo, dos hijos de una época ingenua y luminosa son arrastrados hacia un futuro que amenaza con quebrar su inocencia.</p>
-            
-            <p>Entre partituras extraviadas, la memoria de un pueblo y los ecos de la música que atraviesa generaciones, se teje una historia donde lo íntimo y lo universal se encuentran.</p>
-            
-            <div class="keywords">
-                <span class="keyword-tag music-tag">Música y Bach</span>
-                <span class="keyword-tag culture-tag">Huichapan, México</span>
-                <span class="keyword-tag philosophy-tag">Ficción Metafísica</span>
-                <span class="keyword-tag mexico-tag">Pueblo Mágico</span>
-                <span class="keyword-tag music-tag">Jazz y Bohemia</span>
-                <span class="keyword-tag philosophy-tag">Paradoja de Bootstrap</span>
-                <span class="keyword-tag culture-tag">Novela Mexicana</span>
-                <span class="keyword-tag music-tag">Melómanos</span>
-            </div>
-        </section>
-        
-        <!-- About Author -->
-        <section class="author-section">
-            <div>
-                <img src="https://diegopg03.github.io/bajo-el-acorde-del-tiempo/SDG.png" alt="Sánchez Diego Gabriel" class="author-photo">
-            </div>
-            
-            <div class="author-info">
-                <h3>SÁNCHEZ DIEGO GABRIEL</h3>
-               
-                <p>Escritor mexicano nacido en Huichapan, Hidalgo. Apasionado por el realismo mágico, la memoria cultural y la música, desarrolla historias donde lo cotidiano se entrelaza con lo extraordinario.</p>
-                <p>Ha dedicado años a la docencia, la investigación educativa y cultural, la música y la creación narrativa. <strong>Bajo el Acorde del Tiempo</strong> es su primera novela publicada, resultado de años de trabajo, notas dispersas y reflexiones sobre el ritmo íntimo con el que cada persona enfrenta su propia historia.</p>
-                <p>Actualmente trabaja en nuevos proyectos literarios y en la difusión de experiencias creativas que inspiren a jóvenes escritores.</p>
-            </div>
-        </section>
-        
-        <!-- Playlist -->
-        <section class="playlist-section">
-    <div class="playlist-icon">🎵</div>
-    <h2>LA BANDA SONORA DE "BAJO EL ACORDE DEL TIEMPO"</h2>
-    
-    <p class="playlist-description">
-        Esta playlist no es solo música: es el latido de la novela. Cada canción fue 
-        seleccionada para acompañar momentos clave de la historia, creando una experiencia 
-        auditiva que complementa la lectura.
-    </p>
-    
-    <!-- Estadísticas de la playlist -->
-    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 20px 0;">
-        <div style="text-align: center; background: rgba(255,255,255,0.1); padding: 15px; border-radius: 10px; min-width: 120px;">
-            <div style="font-size: 1.8rem; color: #c9a96e; font-weight: bold;">20+</div>
-            <div style="font-size: 0.9rem;">canciones</div>
-        </div>
-        <div style="text-align: center; background: rgba(255,255,255,0.1); padding: 15px; border-radius: 10px; min-width: 120px;">
-            <div style="font-size: 1.8rem; color: #c9a96e; font-weight: bold;">2+</div>
-            <div style="font-size: 0.9rem;">horas</div>
-        </div>
-        <div style="text-align: center; background: rgba(255,255,255,0.1); padding: 15px; border-radius: 10px; min-width: 120px;">
-            <div style="font-size: 1.8rem; color: #c9a96e; font-weight: bold;">⭐</div>
-            <div style="font-size: 0.9rem;">selección especial</div>
-        </div>
-    </div>
-    
-    <!-- Reproductor -->
-    <div style="max-width: 700px; margin: 30px auto;">
-        <iframe style="border-radius: 12px; box-shadow: 0 15px 35px rgba(0,0,0,0.4);" 
-                src="https://open.spotify.com/embed/playlist/7j1tSZ0l4VdVTNos4TRvP7?utm_source=generator&theme=0" 
-                width="100%" 
-                height="400" 
-                frameBorder="0" 
-                allowfullscreen="" 
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-                loading="lazy">
-        </iframe>
-    </div>
-    
-    <!-- Botones de acción -->
-    <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-top: 25px;">
-        <a href="https://open.spotify.com/playlist/7j1tSZ0l4VdVTNos4TRvP7" 
-           class="spotify-button" 
-           target="_blank" 
-           rel="noopener noreferrer"
-           style="background: #1DB954; padding: 15px 30px; font-size: 1.1rem;">
-           ▶️ ESCUCHAR AHORA EN SPOTIFY
-        </a>
-        
-        <a href="#preorden" 
-           style="background: transparent; border: 2px solid #c9a96e; color: white; 
-                  padding: 15px 30px; border-radius: 50px; text-decoration: none; 
-                  font-weight: 600; font-size: 1.1rem; transition: all 0.3s;">
-           📖 COMPRAR EL LIBRO
-        </a>
-    </div>
-    
-    <!-- Consejo para lectores -->
-    <div style="max-width: 600px; margin: 25px auto; padding: 15px; background: rgba(201, 169, 110, 0.1); 
-                border-radius: 10px; border-left: 4px solid #c9a96e; font-size: 0.95rem;">
-        <strong>💡 Consejo para una lectura inmersiva:</strong> 
-        Escucha esta playlist mientras lees para sumergirte completamente en la atmósfera 
-        musical de Huichapan y los personajes.
-    </div>
-</section>
-        
-        <!-- Amazon CTA -->
-        <section class="amazon-cta">
-            <div class="amazon-logo">📦</div>
-            <h3>¡DISPONIBLE EN AMAZON!</h3>
-            <p>Compra segura con envío a todo el mundo. Kindle Unlimited y Prime Reading disponibles.</p>
-            <a href="#preorden" class="btn-amazon" style="display: inline-block; margin-top: 1rem;">VER EN AMAZON</a>
-        </section>
-        
-        <!-- Pricing -->
-        <section id="preorden" class="pricing-section">
-            <h2>ELIGE TU FORMATO - PRECIOS ESPECIALES</h2>
-            <p class="deadline">🎉 <strong>OFERTA DE LANZAMIENTO - Precios especiales por tiempo limitado</strong></p>
-            
-            <div class="pricing-cards">
-                <!-- VERSIÓN FÍSICA -->
-                <div class="pricing-card popular">
-                    <div class="popular-badge">📗 MÁS VENDIDO</div>
-                    <div class="pricing-header">
-                        <h3>VERSIÓN FÍSICA</h3>
-                        <div class="price">
-                            <span class="price-main">$279 MXN</span>
-                            <span class="price-secondary">$13.99 USD</span>
-                        </div>
-                        <p class="book-specs">196 páginas • Tapa blanda • 6x9 pulgadas</p>
-                    </div>
-                    <ul class="features">
-                        <li>✓ Libro físico impreso en alta calidad</li>
-                        <li>✓ 196 páginas de lectura envolvente</li>
-                        <li>✓ Tamaño: 6x9 pulgadas (15x23 cm)</li>
-                        <li>✓ Tapa blanda duradera</li>
-                        <li>✓ Playlist exclusiva incluida</li>
-                        <li>✓ Envío disponible a todo el mundo</li>
-                    </ul>
-                    <a href="https://www.amazon.com/dp/B0CXXXXXXX" class="btn-purchase popular-btn" target="_blank">COMPRAR VERSIÓN FÍSICA EN AMAZON</a>
-                </div>
-                
-                <!-- VERSIÓN DIGITAL -->
-                <div class="pricing-card">
-                    <div class="pricing-header">
-                        <h3>VERSIÓN DIGITAL</h3>
-                        <div class="price">
-                            <span class="price-main">$99 MXN</span>
-                            <span class="price-secondary">$4.99 USD</span>
-                        </div>
-                        <p class="book-specs">OFERTA EXCLUSIVA DE LANZAMIENTO</p>
-                    </div>
-                    <ul class="features">
-                        <li>✓ Mismo contenido que la versión física</li>
-                        <li>✓ Formato Kindle (compatible con app gratuita)</li>
-                        <li>✓ Lectura inmediata tras la compra</li>
-                        <li>✓ Playlist exclusiva incluida</li>
-                        <li>✓ Sin costos de envío</li>
-                        <li>✓ Disponible en Kindle Unlimited</li>
-                    </ul>
-                    <a href="https://www.amazon.com/dp/B0CXXXXXXX" class="btn-purchase amazon-btn" target="_blank">COMPRAR VERSIÓN DIGITAL EN AMAZON</a>
-                    <p class="digital-note">⚠️ Precio especial de lanzamiento - Aumentará pronto</p>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Book Details -->
-        <section class="details-section">
-            <h3>📖 DETALLES DEL LIBRO</h3>
-            <div class="details-grid">
-                <div class="detail-item">
-                    <span class="detail-label">Título:</span>
-                    Bajo el Acorde del Tiempo
-                </div>
-                <div class="detail-item">
-                    <span class="detail-label">Autor:</span>
-                    Sánchez Diego Gabriel
-                </div>
-                <div class="detail-item">
-                    <span class="detail-label">Año:</span>
-                    2026 (Primera edición)
-                </div>
-                <div class="detail-item">
-                    <span class="detail-label">ISBN:</span>
-                    978-607-29-8172-0
-                </div>
-                <div class="detail-item">
-                    <span class="detail-label">Género:</span>
-                    Realismo y Ficción Temporal
-                </div>
-                <div class="detail-item">
-                    <span class="detail-label">Páginas:</span>
-                    196 (Físico)
-                </div>
-                <div class="detail-item">
-                    <span class="detail-label">Formato:</span>
-                    Físico y Digital (Kindle)
-                </div>
-                <div class="detail-item">
-                    <span class="detail-label">Tamaño:</span>
-                    6x9 pulgadas (15x23 cm)
-                </div>
-            </div>
-        </section>
-        
-        <!-- Final CTA -->
-        <section class="final-cta">
-            <h2>¿LISTO PARA ESCUCHAR LA HISTORIA?</h2>
-            
-            <div class="social-proof">
-                <div class="counter">
-                    <div class="counter-number">196</div>
-                    <div class="counter-label">PÁGINAS DE VIAJE TEMPORAL</div>
-                </div>
-                <div class="testimonial-scroll">
-                    <div class="testimonial-tweet">
-                        "Una oda a Huichapan y a la música como refugio. Sánchez Diego Gabriel captura la esencia de cómo el tiempo se entrelaza con nuestra identidad."
-                        <span>- Lector Beta, Ciudad de México</span>
-                    </div>
-                    <div class="testimonial-tweet">
-                        "Para los que creemos que la mejor literatura es la que resuena como una buena melodía. Una novela que realmente se escucha."
-                        <span>- Melómano y Lector ávido</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="final-buttons">
-                <a href="https://www.amazon.com/dp/B0CXXXXXXX" class="btn-primary-large" target="_blank">COMPRAR AHORA EN AMAZON</a>
-                <p class="urgency-message">⚠️ <strong>Precio especial de lanzamiento</strong> - La versión digital a $59 MXN es por tiempo limitado</p>
-            </div>
-        </section>
-    </main>
-    <!-- Añade esto antes del footer o después de la sección de compra -->
 
-<section style="background: linear-gradient(135deg, #1a1a2e, #2a2a3e); color: white; padding: 60px 20px; text-align: center; border-radius: 15px; margin: 50px 0;">
-    <div class="container">
-        <h2 style="color: #c9a96e; border: none; font-size: 2.5rem;">🎻 ÚNETE A LA COMUNIDAD MUSICAL</h2>
-        <p style="font-size: 1.2rem; margin: 20px 0; max-width: 600px; margin-left: auto; margin-right: auto;">
-            Recibe <strong>contenido exclusivo</strong>, avances de próximos proyectos, 
-            y la playlist completa de la novela antes que nadie.
-        </p>
-        
-        <form action="https://formsubmit.co/contacto.sdg.author@gmail.com" method="POST" 
-              style="max-width: 500px; margin: 30px auto;">
-            
-            <!-- Campos ocultos para FormSubmit -->
-            <input type="hidden" name="_subject" value="¡Nuevo suscriptor desde la web!">
-            <input type="hidden" name="_template" value="table">
-            <input type="hidden" name="_next" value="https://diegopg03.github.io/bajo-el-acorde-del-tiempo/gracias.html">
-            <input type="text" name="_honey" style="display:none">
-            <input type="hidden" name="_captcha" value="false">
-            
-            <!-- Campo de email -->
-            <div style="margin-bottom: 15px;">
-                <input type="email" name="email" 
-                       placeholder="🎵 Tu correo electrónico" 
-                       required
-                       style="width: 100%; padding: 15px; border-radius: 8px; border: 2px solid #c9a96e; font-size: 1rem;">
+    <!-- Synopsis Section -->
+    <section id="sinopsis" class="py-24 bg-gradient-to-b from-slate-900 to-slate-950">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-4xl md:text-5xl font-bold mb-4">Sinopsis</h2>
+                <p class="text-slate-400 text-lg">La historia que desafía el tiempo</p>
             </div>
             
-            <!-- Campo de nombre (opcional) -->
-            <div style="margin-bottom: 20px;">
-                <input type="text" name="name" 
-                       placeholder="📝 ¿Cómo te llamas?"
-                       style="width: 100%; padding: 15px; border-radius: 8px; border: 2px solid #c9a96e; font-size: 1rem;">
+            <div class="bg-slate-800/30 rounded-2xl p-8 md:p-12 border border-slate-700">
+                <p class="text-slate-300 text-lg mb-6">
+                    <strong class="text-amber-400">Bajo el Acorde del Tiempo</strong> es mucho más que una novela: es la historia de un pueblo y su gente, una oda a Huichapan, un tributo a la música como brújula y refugio, y un viaje inolvidable hacia la esperanza que resiste incluso al olvido.
+                </p>
+                <p class="text-slate-300 text-lg mb-6">
+                    Un hombre atrapado entre la pérdida y el desencanto descubre la llave a un secreto capaz de desafiar los siglos. Al otro lado del tiempo, dos hijos de una época ingenua y luminosa son arrastrados hacia un futuro que amenaza con quebrar su inocencia.
+                </p>
+                <p class="text-slate-300 text-lg mb-8">
+                    Entre partituras extraviadas, la memoria de un pueblo y los ecos de la música que atraviesa generaciones, se teje una historia donde lo íntimo y lo universal se encuentran.
+                </p>
+                
+                <div class="flex flex-wrap gap-3">
+                    <span class="px-4 py-2 bg-slate-700/50 rounded-full text-sm border border-blue-500/30 text-blue-300">Música y Bach</span>
+                    <span class="px-4 py-2 bg-slate-700/50 rounded-full text-sm border border-purple-500/30 text-purple-300">Huichapan, México</span>
+                    <span class="px-4 py-2 bg-slate-700/50 rounded-full text-sm border border-emerald-500/30 text-emerald-300">Ficción Metafísica</span>
+                    <span class="px-4 py-2 bg-slate-700/50 rounded-full text-sm border border-amber-500/30 text-amber-300">Pueblo Mágico</span>
+                    <span class="px-4 py-2 bg-slate-700/50 rounded-full text-sm border border-blue-500/30 text-blue-300">Jazz y Bohemia</span>
+                    <span class="px-4 py-2 bg-slate-700/50 rounded-full text-sm border border-emerald-500/30 text-emerald-300">Paradoja de Bootstrap</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- La Resonancia Section -->
+    <section id="resonancia" class="py-24 bg-slate-900">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-amber-400 text-4xl mb-4 block">𝄞</span>
+                <h2 class="font-serif text-4xl md:text-5xl font-bold mb-4">La Resonancia</h2>
+                <p class="text-slate-400 text-lg max-w-2xl mx-auto">Por qué esta novela es única en el panorama literario</p>
             </div>
             
-            <!-- Intereses -->
-            <div style="margin-bottom: 20px; text-align: left;">
-                <p style="margin-bottom: 10px;">🎶 ¿Qué te interesa?</p>
-                <label style="display: block; margin: 5px 0;">
-                    <input type="checkbox" name="intereses[]" value="nuevos_libros"> Próximos libros del autor
-                </label>
-                <label style="display: block; margin: 5px 0;">
-                    <input type="checkbox" name="intereses[]" value="contenido_exclusivo"> Contenido exclusivo sobre la novela
-                </label>
-                <label style="display: block; margin: 5px 0;">
-                    <input type="checkbox" name="intereses[]" value="playlist"> Playlist musical completa
-                </label>
-                <label style="display: block; margin: 5px 0;">
-                    <input type="checkbox" name="intereses[]" value="eventos"> Eventos y presentaciones
-                </label>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="resonance-card bg-slate-800/50 p-8 rounded-2xl border border-slate-700 hover:border-amber-500/50 transition-all hover-card">
+                    <div class="text-4xl mb-4">🎼</div>
+                    <h3 class="font-serif text-2xl font-semibold mb-3 text-amber-400">Arquitectura Musical</h3>
+                    <p class="text-slate-300">No es una novela sobre música. <strong>Es música hecha narrativa.</strong> Las estructuras de fuga y contrapunto de Bach se traducen literalmente en la trama.</p>
+                </div>
+                <div class="resonance-card bg-slate-800/50 p-8 rounded-2xl border border-slate-700 hover:border-amber-500/50 transition-all hover-card">
+                    <div class="text-4xl mb-4">⏳</div>
+                    <h3 class="font-serif text-2xl font-semibold mb-3 text-amber-400">Tiempo No Lineal</h3>
+                    <p class="text-slate-300">La paradoja de bootstrap y la circularidad temporal exploradas a través de la memoria cultural mexicana y el misticismo de los Pueblos Mágicos.</p>
+                </div>
+                <div class="resonance-card bg-slate-800/50 p-8 rounded-2xl border border-slate-700 hover:border-amber-500/50 transition-all hover-card">
+                    <div class="text-4xl mb-4">🇲🇽</div>
+                    <h3 class="font-serif text-2xl font-semibold mb-3 text-amber-400">Realismo Mágico Renovado</h3>
+                    <p class="text-slate-300">Huichapan como nunca lo imaginaste: un Pueblo Mágico donde las calles coloniales son pasillos del tiempo y las campanas tocan acordes imposibles.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Para Quién Section -->
+    <section id="para-quien" class="py-24 bg-gradient-to-b from-slate-900 to-slate-950">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-4xl md:text-5xl font-bold mb-4">¿Para quién es esta novela?</h2>
+                <p class="text-slate-400 text-lg">Tres perfiles, una experiencia unificadora</p>
             </div>
             
-            <!-- Botón de enviar -->
-            <button type="submit" 
-                    style="background: #c9a96e; color: #1a1a2e; border: none; padding: 15px 40px; 
-                           border-radius: 8px; font-size: 1.1rem; font-weight: bold; cursor: pointer;
-                           transition: all 0.3s;">
-                🎻 UNIRME A LA LISTA VIP
-            </button>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="audience-card group relative overflow-hidden rounded-2xl hover-card">
+                    <div class="absolute inset-0 bg-gradient-to-b from-blue-900/80 to-slate-900/90"></div>
+                    <div class="relative p-8 h-full flex flex-col">
+                        <span class="text-5xl mb-4">🎹</span>
+                        <h3 class="font-serif text-2xl font-bold mb-3">Para Melómanos</h3>
+                        <p class="text-slate-300 mb-6 flex-grow">Descubre cómo el contrapunto de Bach se traduce en tramas entrelazadas. Cada capítulo es un movimiento de una sinfonía literaria.</p>
+                        <p class="text-amber-400 font-medium group-hover:translate-x-2 transition-transform">Descubre cómo la música se vuelve carne y hueso →</p>
+                    </div>
+                </div>
+                
+                <div class="audience-card group relative overflow-hidden rounded-2xl hover-card">
+                    <div class="absolute inset-0 bg-gradient-to-b from-purple-900/80 to-slate-900/90"></div>
+                    <div class="relative p-8 h-full flex flex-col">
+                        <span class="text-5xl mb-4">✨</span>
+                        <h3 class="font-serif text-2xl font-bold mb-3">Para Amantes del Realismo Mágico</h3>
+                        <p class="text-slate-300 mb-6 flex-grow">Huichapan como nunca lo imaginaste: donde lo cotidiano se vuelve extraordinario y el tiempo tiene textura de adobe.</p>
+                        <p class="text-amber-400 font-medium group-hover:translate-x-2 transition-transform">Descubre cómo el misticismo cobra nueva dimensión →</p>
+                    </div>
+                </div>
+                
+                <div class="audience-card group relative overflow-hidden rounded-2xl hover-card">
+                    <div class="absolute inset-0 bg-gradient-to-b from-amber-900/80 to-slate-900/90"></div>
+                    <div class="relative p-8 h-full flex flex-col">
+                        <span class="text-5xl mb-4">🔮</span>
+                        <h3 class="font-serif text-2xl font-bold mb-3">Para Buscadores de Profundidad</h3>
+                        <p class="text-slate-300 mb-6 flex-grow">Una exploración literaria de la paradoja de bootstrap y la memoria cultural. Literatura que desafía y recompensa.</p>
+                        <p class="text-amber-400 font-medium group-hover:translate-x-2 transition-transform">Descubre cómo el tiempo se pliega bajo un compás infinito →</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="quiz" class="py-24 bg-slate-950">
+        <div class="max-w-3xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <span class="text-amber-400 text-4xl mb-4 block">🎵</span>
+                <h2 class="font-serif text-4xl md:text-5xl font-bold mb-4">¿Cuál es tu acorde temporal literario?</h2>
+                <p class="text-slate-400 text-lg">Un viaje interactivo que combina tus preferencias musicales, literarias y filosóficas</p>
+            </div>
             
-            <p style="font-size: 0.9rem; margin-top: 15px; opacity: 0.8;">
-                Sin spam. Puedes darte de baja en cualquier momento.
+            <div id="quiz-container" class="bg-slate-800/50 rounded-3xl p-8 md:p-12 border border-slate-700">
+                <!-- Quiz Step 1 -->
+                <div class="quiz-step active" data-step="1">
+                    <div class="mb-8">
+                        <span class="text-amber-400 text-sm font-medium">Pregunta 1 de 4</span>
+                        <div class="w-full bg-slate-700 rounded-full h-2 mt-2">
+                            <div class="bg-amber-500 h-2 rounded-full transition-all" style="width: 25%"></div>
+                        </div>
+                    </div>
+                    <h3 class="font-serif text-2xl font-semibold mb-6">¿Qué género musical resuena más contigo?</h3>
+                    <div class="grid gap-4">
+                        <button class="quiz-option w-full text-left p-4 rounded-xl border border-slate-600 bg-slate-700/50 hover:bg-slate-700 transition-all">
+                            <span class="text-2xl mr-3">🎻</span>
+                            <span>Clásica (Bach, Mozart, Beethoven)</span>
+                        </button>
+                        <button class="quiz-option w-full text-left p-4 rounded-xl border border-slate-600 bg-slate-700/50 hover:bg-slate-700 transition-all">
+                            <span class="text-2xl mr-3">🎷</span>
+                            <span>Jazz (Coltrane, Miles Davis)</span>
+                        </button>
+                        <button class="quiz-option w-full text-left p-4 rounded-xl border border-slate-600 bg-slate-700/50 hover:bg-slate-700 transition-all">
+                            <span class="text-2xl mr-3">🪕</span>
+                            <span>Folklórica / Tradicional</span>
+                        </button>
+                        <button class="quiz-option w-full text-left p-4 rounded-xl border border-slate-600 bg-slate-700/50 hover:bg-slate-700 transition-all">
+                            <span class="text-2xl mr-3">🎧</span>
+                            <span>Contemporánea / Experimental</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Quiz Step 2 (oculto inicialmente) -->
+                <div class="quiz-step hidden" data-step="2">
+                    <div class="mb-8">
+                        <span class="text-amber-400 text-sm font-medium">Pregunta 2 de 4</span>
+                        <div class="w-full bg-slate-700 rounded-full h-2 mt-2">
+                            <div class="bg-amber-500 h-2 rounded-full transition-all" style="width: 50%"></div>
+                        </div>
+                    </div>
+                    <h3 class="font-serif text-2xl font-semibold mb-6">¿Qué autor te ha marcado más?</h3>
+                    <div class="grid gap-4">
+                        <button class="quiz-option w-full text-left p-4 rounded-xl border border-slate-600 bg-slate-700/50 hover:bg-slate-700 transition-all">
+                            <span class="text-2xl mr-3">📚</span>
+                            <span>Jorge Luis Borges</span>
+                        </button>
+                        <button class="quiz-option w-full text-left p-4 rounded-xl border border-slate-600 bg-slate-700/50 hover:bg-slate-700 transition-all">
+                            <span class="text-2xl mr-3">🌀</span>
+                            <span>Julio Cortázar</span>
+                        </button>
+                        <button class="quiz-option w-full text-left p-4 rounded-xl border border-slate-600 bg-slate-700/50 hover:bg-slate-700 transition-all">
+                            <span class="text-2xl mr-3">🦋</span>
+                            <span>Gabriel García Márquez</span>
+                        </button>
+                        <button class="quiz-option w-full text-left p-4 rounded-xl border border-slate-600 bg-slate-700/50 hover:bg-slate-700 transition-all">
+                            <span class="text-2xl mr-3">🌊</span>
+                            <span>Virginia Woolf</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Quiz Step 3 (oculto inicialmente) -->
+                <div class="quiz-step hidden" data-step="3">
+                    <div class="mb-8">
+                        <span class="text-amber-400 text-sm font-medium">Pregunta 3 de 4</span>
+                        <div class="w-full bg-slate-700 rounded-full h-2 mt-2">
+                            <div class="bg-amber-500 h-2 rounded-full transition-all" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <h3 class="font-serif text-2xl font-semibold mb-6">¿Qué concepto temporal te intriga más?</h3>
+                    <div class="grid gap-4">
+                        <button class="quiz-option w-full text-left p-4 rounded-xl border border-slate-600 bg-slate-700/50 hover:bg-slate-700 transition-all">
+                            <span class="text-2xl mr-3">♾️</span>
+                            <span>Paradojas temporales</span>
+                        </button>
+                        <button class="quiz-option w-full text-left p-4 rounded-xl border border-slate-600 bg-slate-700/50 hover:bg-slate-700 transition-all">
+                            <span class="text-2xl mr-3">🔄</span>
+                            <span>Circularidad y repetición</span>
+                        </button>
+                        <button class="quiz-option w-full text-left p-4 rounded-xl border border-slate-600 bg-slate-700/50 hover:bg-slate-700 transition-all">
+                            <span class="text-2xl mr-3">⭐</span>
+                            <span>El eterno retorno</span>
+                        </button>
+                        <button class="quiz-option w-full text-left p-4 rounded-xl border border-slate-600 bg-slate-700/50 hover:bg-slate-700 transition-all">
+                            <span class="text-2xl mr-3">⚡</span>
+                            <span>Simultaneidad</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Quiz Step 4 (oculto inicialmente) -->
+                <div class="quiz-step hidden" data-step="4">
+                    <div class="mb-8">
+                        <span class="text-amber-400 text-sm font-medium">Pregunta 4 de 4</span>
+                        <div class="w-full bg-slate-700 rounded-full h-2 mt-2">
+                            <div class="bg-amber-500 h-2 rounded-full transition-all" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <h3 class="font-serif text-2xl font-semibold mb-6">¿Cuál es tu conexión con México?</h3>
+                    <div class="grid gap-4">
+                        <button class="quiz-option w-full text-left p-4 rounded-xl border border-slate-600 bg-slate-700/50 hover:bg-slate-700 transition-all">
+                            <span class="text-2xl mr-3">🌵</span>
+                            <span>Raíces profundas</span>
+                        </button>
+                        <button class="quiz-option w-full text-left p-4 rounded-xl border border-slate-600 bg-slate-700/50 hover:bg-slate-700 transition-all">
+                            <span class="text-2xl mr-3">🎭</span>
+                            <span>Curiosidad cultural</span>
+                        </button>
+                        <button class="quiz-option w-full text-left p-4 rounded-xl border border-slate-600 bg-slate-700/50 hover:bg-slate-700 transition-all">
+                            <span class="text-2xl mr-3">🏛️</span>
+                            <span>Experiencia vivencial (viajes)</span>
+                        </button>
+                        <button class="quiz-option w-full text-left p-4 rounded-xl border border-slate-600 bg-slate-700/50 hover:bg-slate-700 transition-all">
+                            <span class="text-2xl mr-3">🌎</span>
+                            <span>Descubriendo desde lejos</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Quiz Result (oculto inicialmente) -->
+                <div id="quiz-result" class="hidden text-center">
+                    <div class="mb-8">
+                        <span class="text-6xl mb-4 block animate-float">🎼</span>
+                        <h3 class="font-serif text-3xl font-bold mb-2">Tu Acorde Temporal Literario:</h3>
+                        <p id="result-name" class="text-amber-400 text-2xl font-semibold"></p>
+                    </div>
+                    <p id="result-description" class="text-slate-300 text-lg mb-8"></p>
+                    <div class="bg-slate-700/50 rounded-xl p-6 mb-8">
+                        <p class="text-slate-400 mb-2">Tu perfil coincide perfectamente con:</p>
+                        <p class="font-serif text-xl font-semibold text-amber-400">"Bajo el Acorde del Tiempo"</p>
+                    </div>
+                    <form id="email-capture" class="space-y-4">
+                        <p class="text-slate-300">Recibe tu análisis completo + recomendaciones literarias personalizadas:</p>
+                        <input type="email" placeholder="tu@email.com" required class="w-full px-4 py-3 rounded-lg bg-slate-700 border border-slate-600 focus:border-amber-500 focus:outline-none text-white">
+                        <button type="submit" class="w-full bg-amber-500 text-slate-900 py-3 rounded-lg font-semibold hover:bg-amber-400 transition">
+                            Enviar mi perfil completo
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fragmento Section -->
+    <section id="fragmento" class="py-24 bg-gradient-to-b from-slate-950 to-slate-900">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-4xl md:text-5xl font-bold mb-4">Primer Capítulo</h2>
+                <p class="text-slate-400 text-lg">Un fragmento inmersivo con anotaciones musicales interactivas</p>
+            </div>
+            
+            <div class="bg-slate-800/30 rounded-2xl p-8 md:p-12 border border-slate-700">
+                <p class="text-slate-300 text-lg mb-6 first-letter:text-5xl first-letter:font-serif first-letter:text-amber-400 first-letter:mr-2 first-letter:float-left">
+                    Las campanas del templo de San Mateo Apóstol, en Huichapan no tocaban como las demás campanas. Kin lo había notado desde niñoo, cuando su abuela la llevaba a misa de seis y el 
+                    <span class="tooltip-container text-amber-400 cursor-help border-b border-dashed border-amber-400" data-tooltip="Primera aparición del motivo melódico principal, equivalente al tema de la fuga en D menor de Bach">
+                        bronce resonaba en acordes que parecían imposibles
+                        <span class="tooltip-content">Primera aparición del motivo melódico principal, equivalente al tema de la fuga en D menor de Bach</span>
+                    </span>.
+                </p>
+                <p class="text-slate-300 text-lg mb-6">
+                    "Tres notas simultáneas", pensaba, "cuando solo hay una campana". Pero su abuela nunca parecía escuchar lo mismo. Nadie lo hacía.
+                </p>
+                <p class="text-slate-300 text-lg">
+                    Esa mañana de octubre, 
+                    <span class="tooltip-container text-amber-400 cursor-help border-b border-dashed border-amber-400" data-tooltip="El contrapunto aquí refleja la estructura inversa de un canon retrogrado">
+                        el tañido era diferente
+                        <span class="tooltip-content">El contrapunto aquí refleja la estructura inversa de un canon retrogrado</span>
+                    </span>. 
+                    Más profundo. Como si las piedras coloniales del atrio vibraran en frecuencias que el oído humano apenas podía rozar. Kin cerró los ojos y, por primera vez en sus treinta y dos años, vio lo que siempre había escuchado: un hombre escribiendo partituras bajo un cielo que no era de este siglo...
+                </p>
+                <div class="text-center mt-8">
+                    <a href="#" class="inline-flex items-center gap-2 text-amber-400 hover:text-amber-300 transition">
+                        <span>Continuar leyendo el capítulo completo</span>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios Section -->
+    <section id="testimonios" class="py-24 bg-slate-900">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-4xl md:text-5xl font-bold mb-4">Voces que Resuenan</h2>
+                <p class="text-slate-400 text-lg">Lo que dicen los primeros lectores</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="testimonial-card bg-slate-800/50 rounded-2xl p-6 border border-slate-700 hover-card">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-14 h-14 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-xl font-bold">JC</div>
+                        <div>
+                            <p class="font-semibold">Juan Carlos M.</p>
+                            <p class="text-slate-400 text-sm">Pianista profesional</p>
+                        </div>
+                    </div>
+                    <p class="text-slate-300 italic">"Nunca había leído una novela que me hiciera escuchar a Bach de manera diferente. Después de leerla, las Variaciones Goldberg tienen nuevas capas para mí."</p>
+                </div>
+                
+                <div class="testimonial-card bg-slate-800/50 rounded-2xl p-6 border border-slate-700 hover-card">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-14 h-14 rounded-full bg-gradient-to-br from-amber-500 to-red-600 flex items-center justify-center text-xl font-bold">AL</div>
+                        <div>
+                            <p class="font-semibold">Ana Lucía R.</p>
+                            <p class="text-slate-400 text-sm">Profesora de Literatura</p>
+                        </div>
+                    </div>
+                    <p class="text-slate-300 italic">"Una renovación del realismo mágico que García Márquez aprobaría. La ambientación en Huichapan es perfecta: olorosa, tangible, imposible."</p>
+                </div>
+                
+                <div class="testimonial-card bg-slate-800/50 rounded-2xl p-6 border border-slate-700 hover-card">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-14 h-14 rounded-full bg-gradient-to-br from-green-500 to-teal-600 flex items-center justify-center text-xl font-bold">MF</div>
+                        <div>
+                            <p class="font-semibold">Miguel F.</p>
+                            <p class="text-slate-400 text-sm">Lector del Festival Cervantino</p>
+                        </div>
+                    </div>
+                    <p class="text-slate-300 italic">"Me la leí en una sentada. El capítulo 4 es de los fragmentos literarios más intensos que he leído en años. Necesito la segunda parte."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Playlist Section -->
+    <section id="playlist" class="py-24 bg-gradient-to-b from-slate-900 to-slate-950">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <span class="text-4xl mb-4 block">🎵</span>
+                <h2 class="font-serif text-4xl md:text-5xl font-bold mb-4">La Banda Sonora de la Novela</h2>
+                <p class="text-slate-400 text-lg">Esta playlist no es solo música: es el latido de la novela</p>
+            </div>
+            
+            <div class="bg-slate-800/30 rounded-2xl p-8 border border-slate-700">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <p class="text-slate-300 text-lg mb-6">
+                            Cada canción fue seleccionada para acompañar momentos clave de la historia, creando una experiencia auditiva que complementa la lectura.
+                        </p>
+                        
+                        <div class="grid grid-cols-3 gap-4 mb-6">
+                            <div class="text-center p-4 bg-slate-700/50 rounded-xl">
+                                <div class="text-2xl font-bold text-amber-400">20+</div>
+                                <div class="text-sm text-slate-400">canciones</div>
+                            </div>
+                            <div class="text-center p-4 bg-slate-700/50 rounded-xl">
+                                <div class="text-2xl font-bold text-amber-400">2+</div>
+                                <div class="text-sm text-slate-400">horas</div>
+                            </div>
+                            <div class="text-center p-4 bg-slate-700/50 rounded-xl">
+                                <div class="text-2xl font-bold text-amber-400">⭐</div>
+                                <div class="text-sm text-slate-400">selección especial</div>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <a href="https://open.spotify.com/playlist/7j1tSZ0l4VdVTNos4TRvP7" 
+                               target="_blank"
+                               class="inline-flex items-center justify-center gap-2 bg-green-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-500 transition w-full md:w-auto">
+                                <span>▶️ Escuchar en Spotify</span>
+                            </a>
+                            <a href="#compra" 
+                               class="inline-flex items-center justify-center gap-2 border-2 border-amber-500 text-amber-400 px-6 py-3 rounded-full font-semibold hover:bg-amber-500/10 transition w-full md:w-auto">
+                                <span>📖 Comprar el Libro</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="rounded-xl overflow-hidden shadow-2xl">
+                        <iframe style="border-radius: 12px;" 
+                                src="https://open.spotify.com/embed/playlist/7j1tSZ0l4VdVTNos4TRvP7?utm_source=generator&theme=0" 
+                                width="100%" 
+                                height="352" 
+                                frameBorder="0" 
+                                allowfullscreen="" 
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                                loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+                
+                <div class="mt-8 p-4 bg-amber-500/10 rounded-xl border border-amber-500/30">
+                    <p class="text-amber-300 text-sm">
+                        <strong>💡 Consejo para una lectura inmersiva:</strong> 
+                        Escucha esta playlist mientras lees para sumergirte completamente en la atmósfera musical de Huichapan y los personajes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Author Section -->
+    <section id="autor" class="py-24 bg-slate-900">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-amber-400 font-medium tracking-widest uppercase mb-4 block">Sobre el autor</span>
+                    <h2 class="font-serif text-4xl md:text-5xl font-bold mb-6">Sánchez Diego Gabriel</h2>
+                    <p class="text-slate-300 text-lg mb-4">
+                        Escritor mexicano nacido en Huichapan, Hidalgo. Apasionado por el realismo mágico, la memoria cultural y la música, desarrolla historias donde lo cotidiano se entrelaza con lo extraordinario.
+                    </p>
+                    <p class="text-slate-300 text-lg mb-6">
+                        Ha dedicado años a la docencia, la investigación educativa y cultural, la música y la creación narrativa. <strong class="text-amber-400">Bajo el Acorde del Tiempo</strong> es su primera novela publicada, resultado de años de trabajo, notas dispersas y reflexiones sobre el ritmo íntimo con el que cada persona enfrenta su propia historia.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="mailto:contacto.sdg.author@gmail.com" class="text-slate-400 hover:text-amber-400 transition text-2xl">✉️</a>
+                        <a href="#" class="text-slate-400 hover:text-amber-400 transition text-2xl">📘</a>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div class="relative">
+                        <img src="https://diegopg03.github.io/bajo-el-acorde-del-tiempo/SDG.png" 
+                             alt="Sánchez Diego Gabriel" 
+                             class="rounded-2xl w-80 h-80 object-cover border-4 border-amber-500 shadow-2xl">
+                        <div class="absolute -bottom-4 -right-4 bg-amber-500 text-slate-900 px-4 py-2 rounded-lg font-serif text-lg font-bold">
+                            El Autor
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compra Section -->
+    <section id="compra" class="py-24 bg-gradient-to-b from-slate-950 to-slate-900">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-4xl md:text-5xl font-bold mb-4">Consigue Tu Ejemplar</h2>
+                <p class="text-slate-400 text-lg">Sumérgete en un universo donde cada página tiene su propio compás</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Versión Física -->
+                <div class="purchase-card bg-gradient-to-b from-amber-900/30 to-slate-800/50 rounded-2xl p-8 border-2 border-amber-500 relative hover-card">
+                    <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-amber-500 text-slate-900 px-4 py-1 rounded-full text-sm font-semibold">
+                        Más Vendido
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold mb-2 text-center">Versión Física</h3>
+                    <p class="text-center text-slate-400 mb-4">196 páginas • Tapa blanda • 6x9 pulgadas</p>
+                    <div class="text-center mb-6">
+                        <span class="text-4xl font-bold text-amber-400">$279 MXN</span>
+                        <span class="text-slate-400 block text-sm">≈ $13.99 USD</span>
+                    </div>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center gap-2 text-slate-300">
+                            <span class="text-amber-400">✓</span> Libro físico impreso en alta calidad
+                        </li>
+                        <li class="flex items-center gap-2 text-slate-300">
+                            <span class="text-amber-400">✓</span> 196 páginas de lectura envolvente
+                        </li>
+                        <li class="flex items-center gap-2 text-slate-300">
+                            <span class="text-amber-400">✓</span> Tamaño: 6x9 pulgadas (15x23 cm)
+                        </li>
+                        <li class="flex items-center gap-2 text-slate-300">
+                            <span class="text-amber-400">✓</span> Tapa blanda duradera
+                        </li>
+                        <li class="flex items-center gap-2 text-slate-300">
+                            <span class="text-amber-400">✓</span> Playlist exclusiva incluida
+                        </li>
+                        <li class="flex items-center gap-2 text-slate-300">
+                            <span class="text-amber-400">✓</span> Envío disponible a todo el mundo
+                        </li>
+                    </ul>
+                    <a href="https://www.amazon.com/dp/B0CXXXXXXX" 
+                       target="_blank"
+                       class="block w-full bg-amber-500 text-slate-900 py-4 rounded-xl font-bold text-lg hover:bg-amber-400 transition-all text-center">
+                        Comprar en Amazon
+                    </a>
+                </div>
+                
+                <!-- Versión Digital -->
+                <div class="purchase-card bg-gradient-to-b from-blue-900/30 to-slate-800/50 rounded-2xl p-8 border border-slate-700 hover-card">
+                    <h3 class="font-serif text-2xl font-bold mb-2 text-center">Versión Digital</h3>
+                    <p class="text-center text-slate-400 mb-4">Kindle • ePub • PDF</p>
+                    <div class="text-center mb-6">
+                        <span class="text-4xl font-bold">$99 MXN</span>
+                        <span class="text-slate-400 block text-sm">≈ $4.99 USD</span>
+                        <p class="text-amber-400 text-sm mt-2">🎉 OFERTA DE LANZAMIENTO</p>
+                    </div>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center gap-2 text-slate-300">
+                            <span class="text-amber-400">✓</span> Mismo contenido que la versión física
+                        </li>
+                        <li class="flex items-center gap-2 text-slate-300">
+                            <span class="text-amber-400">✓</span> Formato Kindle (compatible con app gratuita)
+                        </li>
+                        <li class="flex items-center gap-2 text-slate-300">
+                            <span class="text-amber-400">✓</span> Lectura inmediata tras la compra
+                        </li>
+                        <li class="flex items-center gap-2 text-slate-300">
+                            <span class="text-amber-400">✓</span> Playlist exclusiva incluida
+                        </li>
+                        <li class="flex items-center gap-2 text-slate-300">
+                            <span class="text-amber-400">✓</span> Sin costos de envío
+                        </li>
+                        <li class="flex items-center gap-2 text-slate-300">
+                            <span class="text-amber-400">✓</span> Disponible en Kindle Unlimited
+                        </li>
+                    </ul>
+                    <a href="https://www.amazon.com/dp/B0CXXXXXXX" 
+                       target="_blank"
+                       class="block w-full bg-blue-600 text-white py-4 rounded-xl font-bold text-lg hover:bg-blue-500 transition-all text-center">
+                        Comprar en Amazon Kindle
+                    </a>
+                    <p class="text-center text-amber-400 text-sm mt-4 font-semibold">
+                        ⚠️ Precio especial de lanzamiento - Aumentará pronto
+                    </p>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-slate-800/50 rounded-2xl p-6 border border-slate-700">
+                <h3 class="font-serif text-2xl font-bold mb-4 text-center">📖 Detalles del Libro</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="p-4 bg-slate-700/30 rounded-lg">
+                        <div class="text-slate-400 text-sm mb-1">Título</div>
+                        <div class="font-semibold">Bajo el Acorde del Tiempo</div>
+                    </div>
+                    <div class="p-4 bg-slate-700/30 rounded-lg">
+                        <div class="text-slate-400 text-sm mb-1">Autor</div>
+                        <div class="font-semibold">Sánchez Diego Gabriel</div>
+                    </div>
+                    <div class="p-4 bg-slate-700/30 rounded-lg">
+                        <div class="text-slate-400 text-sm mb-1">Año</div>
+                        <div class="font-semibold">2026 (Primera edición)</div>
+                    </div>
+                    <div class="p-4 bg-slate-700/30 rounded-lg">
+                        <div class="text-slate-400 text-sm mb-1">ISBN</div>
+                        <div class="font-semibold">978-607-29-8172-0</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Huichapan Map Section -->
+    <section id="huichapan" class="py-24 bg-slate-900">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-4xl md:text-5xl font-bold mb-4">El Universo de la Novela</h2>
+                <p class="text-slate-400 text-lg">Explora los lugares reales que inspiraron "Bajo el Acorde del Tiempo"</p>
+            </div>
+            
+            <div class="bg-slate-800/50 rounded-2xl p-8 border border-slate-700">
+                <div class="grid grid-cols-3 gap-4 md:gap-8">
+                    <div class="map-point text-center cursor-pointer hover:scale-110 transition-transform" data-location="templo">
+                        <div class="w-16 h-16 mx-auto mb-2 rounded-full bg-amber-500/20 border-2 border-amber-500 flex items-center justify-center text-2xl">🏛️</div>
+                        <p class="text-sm font-medium">Templo de San Mateo</p>
+                    </div>
+                    <div class="map-point text-center cursor-pointer hover:scale-110 transition-transform" data-location="plaza">
+                        <div class="w-16 h-16 mx-auto mb-2 rounded-full bg-blue-500/20 border-2 border-blue-500 flex items-center justify-center text-2xl">⛲</div>
+                        <p class="text-sm font-medium">Plaza Principal</p>
+                    </div>
+                    <div class="map-point text-center cursor-pointer hover:scale-110 transition-transform" data-location="calles">
+                        <div class="w-16 h-16 mx-auto mb-2 rounded-full bg-purple-500/20 border-2 border-purple-500 flex items-center justify-center text-2xl">🛤️</div>
+                        <p class="text-sm font-medium">Calles Coloniales</p>
+                    </div>
+                </div>
+                
+                <div id="location-info" class="mt-8 p-6 bg-slate-700/50 rounded-xl hidden">
+                    <h4 id="location-title" class="font-serif text-xl font-semibold text-amber-400 mb-2"></h4>
+                    <p id="location-description" class="text-slate-300"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 bg-gradient-to-b from-slate-900 to-slate-950">
+        <div class="max-w-3xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-4xl md:text-5xl font-bold mb-4">Preguntas Frecuentes</h2>
+            </div>
+            
+            <div class="space-y-4">
+                <div class="faq-item bg-slate-800/50 rounded-xl border border-slate-700 overflow-hidden hover-card">
+                    <button class="faq-trigger w-full p-6 text-left flex justify-between items-center">
+                        <span class="font-semibold">¿Necesito saber de música para disfrutar la novela?</span>
+                        <span class="faq-icon text-amber-400 text-2xl transition-transform">+</span>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-slate-300">
+                        No. Aunque los melómanos encontrarán capas adicionales, la novela está diseñada para que cualquier lector disfrute la historia. Las referencias musicales enriquecen pero no son requisito.
+                    </div>
+                </div>
+                
+                <div class="faq-item bg-slate-800/50 rounded-xl border border-slate-700 overflow-hidden hover-card">
+                    <button class="faq-trigger w-full p-6 text-left flex justify-between items-center">
+                        <span class="font-semibold">¿Es confusa la estructura temporal?</span>
+                        <span class="faq-icon text-amber-400 text-2xl transition-transform">+</span>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-slate-300">
+                        El tiempo no es lineal, pero la narrativa te guía. Los lectores reportan que la "confusión inicial" es parte del encanto: cuando las piezas encajan, la revelación es más satisfactoria.
+                    </div>
+                </div>
+                
+                <div class="faq-item bg-slate-800/50 rounded-xl border border-slate-700 overflow-hidden hover-card">
+                    <button class="faq-trigger w-full p-6 text-left flex justify-between items-center">
+                        <span class="font-semibold">¿Cuánto tarda el envío?</span>
+                        <span class="faq-icon text-amber-400 text-2xl transition-transform">+</span>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-slate-300">
+                        Envíos a CDMX: 2-3 días hábiles. Interior de la República: 5-7 días hábiles. Los ejemplares firmados se preparan personalmente, por lo que pueden tomar 1-2 días adicionales.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="py-24 bg-slate-900">
+        <div class="max-w-2xl mx-auto px-6 text-center">
+            <div class="bg-gradient-to-br from-amber-900/30 to-slate-800/50 rounded-2xl p-8 md:p-12 border border-amber-500/30">
+                <span class="text-4xl mb-4 block">🎻</span>
+                <h2 class="font-serif text-3xl md:text-4xl font-bold mb-4">Únete a la Comunidad Musical</h2>
+                <p class="text-slate-300 mb-6">
+                    Recibe <strong class="text-amber-400">contenido exclusivo</strong>, avances de próximos proyectos, 
+                    y la playlist completa de la novela antes que nadie.
+                </p>
+                
+                <form action="https://formsubmit.co/contacto.sdg.author@gmail.com" method="POST" class="space-y-4">
+                    <!-- Campos ocultos para FormSubmit -->
+                    <input type="hidden" name="_subject" value="¡Nuevo suscriptor desde la web!">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_next" value="https://diegopg03.github.io/bajo-el-acorde-del-tiempo/gracias.html">
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="hidden" name="_captcha" value="false">
+                    
+                    <div>
+                        <input type="email" 
+                               name="email" 
+                               placeholder="🎵 Tu correo electrónico" 
+                               required
+                               class="w-full px-4 py-3 rounded-lg bg-slate-700 border border-slate-600 focus:border-amber-500 focus:outline-none text-white">
+                    </div>
+                    
+                    <div>
+                        <input type="text" 
+                               name="name" 
+                               placeholder="📝 ¿Cómo te llamas?"
+                               class="w-full px-4 py-3 rounded-lg bg-slate-700 border border-slate-600 focus:border-amber-500 focus:outline-none text-white">
+                    </div>
+                    
+                    <div class="text-left">
+                        <p class="text-slate-300 mb-2">🎶 ¿Qué te interesa?</p>
+                        <div class="grid grid-cols-2 gap-2">
+                            <label class="flex items-center gap-2 text-slate-300 text-sm">
+                                <input type="checkbox" name="intereses[]" value="nuevos_libros" class="rounded border-slate-600 bg-slate-700">
+                                Próximos libros
+                            </label>
+                            <label class="flex items-center gap-2 text-slate-300 text-sm">
+                                <input type="checkbox" name="intereses[]" value="contenido_exclusivo" class="rounded border-slate-600 bg-slate-700">
+                                Contenido exclusivo
+                            </label>
+                            <label class="flex items-center gap-2 text-slate-300 text-sm">
+                                <input type="checkbox" name="intereses[]" value="playlist" class="rounded border-slate-600 bg-slate-700">
+                                Playlist musical
+                            </label>
+                            <label class="flex items-center gap-2 text-slate-300 text-sm">
+                                <input type="checkbox" name="intereses[]" value="eventos" class="rounded border-slate-600 bg-slate-700">
+                                Eventos
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" 
+                            class="w-full bg-amber-500 text-slate-900 px-6 py-3 rounded-lg font-bold text-lg hover:bg-amber-400 transition">
+                        🎻 Unirme a la Lista VIP
+                    </button>
+                    
+                    <p class="text-slate-500 text-sm">
+                        Sin spam. Puedes darte de baja en cualquier momento.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-24 bg-gradient-to-b from-slate-950 to-slate-900">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="font-serif text-4xl md:text-5xl font-bold mb-8">¿Listo para escuchar la historia?</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700">
+                    <div class="text-6xl font-bold text-amber-400 mb-2">196</div>
+                    <div class="text-slate-400">PÁGINAS DE VIAJE TEMPORAL</div>
+                </div>
+                <div class="space-y-4">
+                    <div class="bg-slate-800/50 p-6 rounded-xl border-l-4 border-amber-500">
+                        <p class="text-slate-300 italic">"Una oda a Huichapan y a la música como refugio. Sánchez Diego Gabriel captura la esencia de cómo el tiempo se entrelaza con nuestra identidad."</p>
+                        <p class="text-amber-400 mt-2">- Lector Beta, Ciudad de México</p>
+                    </div>
+                    <div class="bg-slate-800/50 p-6 rounded-xl border-l-4 border-amber-500">
+                        <p class="text-slate-300 italic">"Para los que creemos que la mejor literatura es la que resuena como una buena melodía. Una novela que realmente se escucha."</p>
+                        <p class="text-amber-400 mt-2">- Melómano y Lector ávido</p>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="https://www.amazon.com/dp/B0CXXXXXXX" 
+               target="_blank"
+               class="inline-block bg-amber-500 text-slate-900 px-8 py-4 rounded-full font-bold text-lg hover:bg-amber-400 transition-all hover:scale-105">
+               Comprar Ahora en Amazon
+            </a>
+            <p class="text-amber-400 mt-4 font-semibold">
+                ⚠️ <strong>Precio especial de lanzamiento</strong> - La versión digital a $99 MXN es por tiempo limitado
             </p>
-        </form>
-    </div>
-</section>
-    
+        </div>
+    </section>
+
     <!-- Footer -->
-<footer>
-        <div class="container">
-            <div class="logo">Bajo el <span>Acorde del Tiempo</span></div>
-            
-            <div class="footer-links">
-                <a href="mailto:contacto.sdg.author@gmail.com">Contacto del Autor</a>
-                <a href="https://www.amazon.com/dp/B0CXXXXXXX" target="_blank">Comprar en Amazon</a>
+    <footer class="py-12 bg-slate-950 border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="text-amber-400 text-2xl">♫</span>
+                        <span class="font-serif text-xl font-semibold">Bajo el Acorde</span>
+                    </div>
+                    <p class="text-slate-400 text-sm">Una novela donde Bach escribe la partitura del tiempo.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Explorar</h4>
+                    <ul class="space-y-2 text-slate-400 text-sm">
+                        <li><a href="#resonancia" class="hover:text-amber-400 transition">La Resonancia</a></li>
+                        <li><a href="#quiz" class="hover:text-amber-400 transition">Tu Acorde</a></li>
+                        <li><a href="#fragmento" class="hover:text-amber-400 transition">Leer Fragmento</a></li>
+                        <li><a href="#playlist" class="hover:text-amber-400 transition">Playlist</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Recursos</h4>
+                    <ul class="space-y-2 text-slate-400 text-sm">
+                        <li><a href="#compra" class="hover:text-amber-400 transition">Comprar Libro</a></li>
+                        <li><a href="#autor" class="hover:text-amber-400 transition">Sobre el Autor</a></li>
+                        <li><a href="#huichapan" class="hover:text-amber-400 transition">Lugares de la Novela</a></li>
+                        <li><a href="#faq" class="hover:text-amber-400 transition">Preguntas Frecuentes</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Contacto</h4>
+                    <ul class="space-y-2 text-slate-400 text-sm">
+                        <li><a href="mailto:contacto.sdg.author@gmail.com" class="hover:text-amber-400 transition">contacto.sdg.author@gmail.com</a></li>
+                        <li class="flex gap-4 mt-4">
+                            <a href="#" class="hover:text-amber-400 transition">FB</a>
+                            <a href="#" class="hover:text-amber-400 transition">IG</a>
+                            <a href="#" class="hover:text-amber-400 transition">TW</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             
-            <div class="rights-notice">
-                <p><strong>© 2026 Diego Pérez González.</strong> Publicado bajo el seudónimo Sánchez Diego Gabriel. Primera edición, 2026. Impreso en México.</p>
-                <p>Para información de derechos o permisos: contacto.sdg.author@gmail.com</p>
-                <p>Todos los derechos reservados. Ninguna parte de esta obra puede ser reproducida, almacenada o transmitida en forma alguna o por cualquier medio — electrónico, mecánico, fotocopiado, grabación o cualquier otro sistema— sin permiso previo y por escrito del titular de los derechos.</p>
-                <p><strong>Advertencia al lector:</strong> La aparición de nombres de personajes reales se utiliza exclusivamente con fines literarios sin pretensión biográfica, histórica o documental. Cualquier semejanza con personas reales, vivas o muertas, que no hayan sido mencionadas explícitamente, es coincidencia literaria.</p>
-                <p>Algunas ubicaciones reales, así como algunas construcciones y monumentos, se mencionan únicamente como referencias geográficas o culturales. No representan descripciones exactas, ni implican patrocinio o relación oficial con dichas instituciones o localidades.</p>
-                <p>El lector debe considerar que cualquier interpretación factual, política, religiosa o histórica es exclusivamente parte del recurso narrativo y no refleja posturas, afirmaciones ni declaraciones del autor, del titular de los derechos o de terceros mencionados.</p>
-                <p>Gracias por permitirte entrar en este universo literario.</p>
+            <div class="border-t border-slate-800 pt-8">
+                <div class="text-slate-500 text-sm mb-4">
+                    <p><strong>© 2026 Diego Pérez González.</strong> Publicado bajo el seudónimo Sánchez Diego Gabriel. Primera edición, 2026. Impreso en México.</p>
+                    <p class="mt-2">Para información de derechos o permisos: contacto.sdg.author@gmail.com</p>
+                </div>
+                <div class="text-slate-600 text-xs">
+                    <p>Todos los derechos reservados. Ninguna parte de esta obra puede ser reproducida, almacenada o transmitida en forma alguna o por cualquier medio — electrónico, mecánico, fotocopiado, grabación o cualquier otro sistema— sin permiso previo y por escrito del titular de los derechos.</p>
+                    <p class="mt-2 italic">"No perdamos nada de nuestro tiempo; quizá los hubo más bellos, pero este es el nuestro" - Jean Paul Sartre</p>
+                </div>
             </div>
-            
-            <p class="copyright">"No perdamos nada de nuestro tiempo; quizá los hubo más bellos, pero este es el nuestro" - Jean Paul Sartre</p>
         </div>
     </footer>
-    
+
+    <!-- Exit Intent Popup -->
+    <div id="exit-popup" class="fixed inset-0 bg-slate-900/90 z-50 hidden items-center justify-center p-6">
+        <div class="bg-slate-800 rounded-2xl p-8 max-w-md w-full border border-slate-700 relative">
+            <button id="close-popup" class="absolute top-4 right-4 text-slate-400 hover:text-white text-2xl">&times;</button>
+            <div class="text-center">
+                <span class="text-4xl mb-4 block">🎼</span>
+                <h3 class="font-serif text-2xl font-bold mb-2">¿Te vas sin descubrir cómo Bach compone esta historia?</h3>
+                <p class="text-slate-300 mb-6">Recibe un análisis exclusivo de las estructuras musicales convertidas en narrativa + el primer capítulo gratis.</p>
+                <form id="popup-form" class="space-y-4">
+                    <input type="email" placeholder="tu@email.com" required class="w-full px-4 py-3 rounded-lg bg-slate-700 border border-slate-600 focus:border-amber-500 focus:outline-none text-white">
+                    <button type="submit" class="w-full bg-amber-500 text-slate-900 py-3 rounded-lg font-semibold hover:bg-amber-400 transition">
+                        Quiero mi guía gratuita
+                    </button>
+                </form>
+                <p class="text-slate-500 text-xs mt-4">No spam. Solo música y literatura.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                document.body.style.overflow = mobileMenu.classList.contains('hidden') ? 'auto' : 'hidden';
+            });
+            
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    document.body.style.overflow = 'auto';
+                });
+            });
+            
+            // Navbar scroll effect
+            const navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 100) {
+                    navbar.classList.add('bg-slate-900');
+                    navbar.classList.remove('bg-slate-900/90');
+                } else {
+                    navbar.classList.remove('bg-slate-900');
+                    navbar.classList.add('bg-slate-900/90');
+                }
+            });
+            
+            // Quiz functionality
+            let currentStep = 1;
+            const totalSteps = 4;
+            const quizSteps = document.querySelectorAll('.quiz-step');
+            const quizOptions = document.querySelectorAll('.quiz-option');
+            const quizResult = document.getElementById('quiz-result');
+            const resultName = document.getElementById('result-name');
+            const resultDescription = document.getElementById('result-description');
+            const emailCaptureForm = document.getElementById('email-capture');
+            
+            quizOptions.forEach(option => {
+                option.addEventListener('click', function() {
+                    const step = this.closest('.quiz-step').dataset.step;
+                    
+                    // Update progress bar
+                    const progressBar = this.closest('.quiz-step').querySelector('.bg-amber-500');
+                    const progress = (step / totalSteps) * 100;
+                    progressBar.style.width = `${progress}%`;
+                    
+                    // Hide current step
+                    document.querySelector('.quiz-step.active').classList.remove('active');
+                    
+                    // Show next step or result
+                    if (step < totalSteps) {
+                        const nextStep = parseInt(step) + 1;
+                        document.querySelector(`.quiz-step[data-step="${nextStep}"]`).classList.add('active');
+                    } else {
+                        // Show result
+                        document.getElementById('quiz-container').classList.add('hidden');
+                        quizResult.classList.remove('hidden');
+                        
+                        // Set result text based on selections (simplified version)
+                        resultName.textContent = 'El Viajero Sonoro';
+                        resultDescription.textContent = 'Tu perfil combina curiosidad musical, aprecio por la literatura profunda y fascinación por las paradojas temporales. Eres el lector ideal para "Bajo el Acorde del Tiempo".';
+                    }
+                });
+            });
+            
+            // Email capture form
+            if (emailCaptureForm) {
+                emailCaptureForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('¡Gracias! Tu perfil ha sido registrado. Te enviaremos el análisis completo pronto.');
+                    this.reset();
+                });
+            }
+            
+            // Map functionality
+            const mapPoints = document.querySelectorAll('.map-point');
+            const locationInfo = document.getElementById('location-info');
+            const locationTitle = document.getElementById('location-title');
+            const locationDescription = document.getElementById('location-description');
+            
+            const locationData = {
+                'templo': {
+                    title: 'Templo de San Mateo Apóstol',
+                    description: 'El corazón espiritual de Huichapan. En la novela, sus campanas tocan acordes imposibles que desencadenan la trama temporal.'
+                },
+                'plaza': {
+                    title: 'Plaza Principal',
+                    description: 'Donde convergen todos los tiempos. La plaza aparece como un punto de encuentro entre personajes de diferentes épocas.'
+                },
+                'calles': {
+                    title: 'Calles Coloniales',
+                    description: 'Los callejones de adobe y cantera se convierten en pasillos temporales en la novela.'
+                }
+            };
+            
+            mapPoints.forEach(point => {
+                point.addEventListener('click', function() {
+                    const location = this.dataset.location;
+                    
+                    locationInfo.classList.remove('hidden');
+                    locationTitle.textContent = locationData[location].title;
+                    locationDescription.textContent = locationData[location].description;
+                });
+            });
+            
+            // FAQ functionality
+            const faqTriggers = document.querySelectorAll('.faq-trigger');
+            
+            faqTriggers.forEach(trigger => {
+                trigger.addEventListener('click', function() {
+                    const faqItem = this.parentElement;
+                    const content = this.nextElementSibling;
+                    const icon = this.querySelector('.faq-icon');
+                    
+                    // Toggle current item
+                    if (content.classList.contains('hidden')) {
+                        content.classList.remove('hidden');
+                        icon.textContent = '-';
+                    } else {
+                        content.classList.add('hidden');
+                        icon.textContent = '+';
+                    }
+                });
+            });
+            
+            // Exit intent popup
+            const exitPopup = document.getElementById('exit-popup');
+            const closePopup = document.getElementById('close-popup');
+            const popupForm = document.getElementById('popup-form');
+            
+            let mouseY = 0;
+            document.addEventListener('mousemove', (e) => {
+                mouseY = e.clientY;
+            });
+            
+            document.addEventListener('mouseleave', (e) => {
+                if (mouseY < 50 && !sessionStorage.getItem('popupShown')) {
+                    setTimeout(() => {
+                        exitPopup.classList.remove('hidden');
+                        sessionStorage.setItem('popupShown', 'true');
+                    }, 500);
+                }
+            });
+            
+            closePopup.addEventListener('click', () => {
+                exitPopup.classList.add('hidden');
+            });
+            
+            if (popupForm) {
+                popupForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('¡Gracias! Te hemos enviado la guía gratuita a tu correo.');
+                    exitPopup.classList.add('hidden');
+                    this.reset();
+                });
+            }
+            
+            // Create particles for hero section
+            function createParticles() {
+                const container = document.getElementById('particles-container');
+                if (!container) return;
+                
+                for (let i = 0; i < 30; i++) {
+                    const particle = document.createElement('div');
+                    particle.classList.add('particle');
+                    
+                    // Random size and position
+                    const size = Math.random() * 4 + 1;
+                    const posX = Math.random() * 100;
+                    const posY = Math.random() * 100;
+                    const delay = Math.random() * 5;
+                    const duration = Math.random() * 10 + 10;
+                    
+                    particle.style.width = `${size}px`;
+                    particle.style.height = `${size}px`;
+                    particle.style.left = `${posX}%`;
+                    particle.style.top = `${posY}%`;
+                    particle.style.animation = `float ${duration}s ease-in-out ${delay}s infinite`;
+                    particle.style.opacity = Math.random() * 0.5 + 0.1;
+                    
+                    container.appendChild(particle);
+                }
+            }
+            
+            createParticles();
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
