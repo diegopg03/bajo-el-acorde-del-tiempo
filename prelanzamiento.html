@@ -9,7 +9,32 @@
       gtag('js', new Date());
       gtag('config', 'G-WB71XXRPV8');
     </script>
-    
+    <!-- ===== PIXEL DE FACEBOOK ===== -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      
+      // REEMPLAZA '1234567890123456' CON TU ID REAL DE PIXEL
+      fbq('init', '1376176544256512');
+      fbq('track', 'PageView');
+      fbq('track', 'ViewContent', {
+        content_name: 'Bajo el Acorde del Tiempo',
+        content_type: 'product',
+        content_ids: ['bajo_el_acorde'],
+        content_category: 'book'
+      });
+    </script>
+    <noscript>
+      <img height="1" width="1" style="display:none" 
+           src="https://www.facebook.com/tr?id=1234567890123456&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- ===== FIN PIXEL ===== -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bajo el Acorde del Tiempo | Acceso Anticipado Exclusivo</title>
@@ -1269,5 +1294,64 @@
             });
         });
     </script>
+    <!-- ===== EVENTOS DE FACEBOOK PIXEL ===== -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // 1. Evento para cuando se ENVÍA el formulario del quiz (LEAD)
+        const quizForm = document.getElementById('email-capture');
+        if (quizForm) {
+          quizForm.addEventListener('submit', function() {
+            fbq('track', 'Lead', {
+              content_name: 'Quiz Completo - Bajo el Acorde',
+              content_category: 'book_prelaunch',
+              value: 0,
+              currency: 'MXN'
+            });
+            console.log('Facebook Pixel: Lead event fired');
+          });
+        }
+        
+        // 2. Evento para cuando se INICIA el quiz
+        const quizOptions = document.querySelectorAll('.quiz-option');
+        let quizStarted = false;
+        
+        quizOptions.forEach(option => {
+          option.addEventListener('click', function() {
+            if (!quizStarted) {
+              quizStarted = true;
+              fbq('track', 'AddToCart', {
+                content_name: 'Quiz Iniciado - Bajo el Acorde',
+                content_category: 'engagement'
+              });
+              console.log('Facebook Pixel: Quiz Started event fired');
+            }
+          });
+        });
+        
+        // 3. Evento para clics en botones principales
+        const ctaButtons = document.querySelectorAll('[href="#quiz"], .cta-primary, .cta-nav');
+        ctaButtons.forEach(button => {
+          button.addEventListener('click', function() {
+            fbq('track', 'InitiateCheckout', {
+              content_name: 'CTA Clicked - Acceso Anticipado',
+              content_category: 'engagement'
+            });
+            console.log('Facebook Pixel: CTA Click event fired');
+          });
+        });
+        
+        // 4. Evento para ver fragmento
+        const fragmentLink = document.querySelector('a[href="#fragmento"]');
+        if (fragmentLink) {
+          fragmentLink.addEventListener('click', function() {
+            fbq('track', 'ViewContent', {
+              content_name: 'Fragmento Leído - Bajo el Acorde',
+              content_type: 'product'
+            });
+          });
+        }
+      });
+    </script>
+    <!-- ===== FIN EVENTOS ===== -->
 </body>
 </html>
