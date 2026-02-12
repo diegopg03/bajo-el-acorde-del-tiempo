@@ -1345,5 +1345,59 @@ src="https://www.facebook.com/tr?id=1376176544256512&ev=PageView&noscript=1"
       });
     </script>
     <!-- ===== FIN EVENTOS ===== -->
+    <script>
+  // =============================================
+  // CRM AUTOMÁTICO - ENVÍA A GOOGLE SHEETS
+  // SIN AFECTAR EL ENVÍO A CORREO NI AL PÍXEL
+  // =============================================
+  (function() {
+    // 1. PEGA AQUÍ TU URL DE APPS SCRIPT (la que copiaste)
+    const APPS_SCRIPT_URL = 'URL_QUE_COPIASTE_DE_APPS_SCRIPT';
+    
+    // 2. ESPERAMOS QUE EL FORMULARIO EXISTA
+    function initCRM() {
+      const form = document.querySelector('form'); // Tu formulario actual
+      if (!form) return;
+      
+      // 3. GUARDAMOS EL ENVÍO ORIGINAL (para NO romperlo)
+      const originalSubmit = form.onsubmit;
+      
+      // 4. AÑADIMOS NUESTRO ENVÍO ADICIONAL
+      form.addEventListener('submit', function(e) {
+        // NO cancelamos el evento. El envío a tu correo SEGUIRÁ funcionando.
+        
+        // Recoger datos del formulario
+        const formData = new FormData(form);
+        
+        // Construir objeto con los NOMBRES EXACTOS de tus inputs
+        const dataToSend = {
+          nombre: formData.get('nombre') || document.querySelector('input[name="nombre"]')?.value || '',
+          email: formData.get('email') || document.querySelector('input[name="email"]')?.value || '',
+          genero: formData.get('genero') || document.querySelector('input[name="genero"]:checked')?.value || '',
+          perfil: formData.get('perfil') || document.querySelector('input[name="perfil"]:checked')?.value || '',
+          filosofia: formData.get('filosofia') || document.querySelector('input[name="filosofia"]:checked')?.value || '',
+          personaje: formData.get('personaje') || document.querySelector('input[name="personaje"]:checked')?.value || ''
+        };
+        
+        // Enviar a Google Sheets (sin esperar respuesta, en segundo plano)
+        fetch(APPS_SCRIPT_URL, {
+          method: 'POST',
+          mode: 'no-cors',  // Crítico: permite enviar sin bloquear
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(dataToSend)
+        }).catch(err => console.log('CRM OK (no-cors):', err));
+        
+        // El formulario SIGUE su curso normal. El píxel de Meta funciona.
+      });
+    }
+    
+    // Ejecutar cuando la página cargue
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initCRM);
+    } else {
+      initCRM();
+    }
+  })();
+</script>
 </body>
 </html>
