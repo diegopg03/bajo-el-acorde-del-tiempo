@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Círculo de Primeros Lectores · Bajo el Acorde del Tiempo</title>
+    <!-- Tailwind CSS y fuentes -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #e2e8f0;
+        }
+
+        .font-serif {
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .gold {
+            color: #c9a96e;
+        }
+
+        .border-gold {
+            border-color: #c9a96e;
+        }
+
+        .bg-gold-light {
+            background-color: rgba(201, 169, 110, 0.1);
+        }
+
+        /* Estilo para el contador */
+        .countdown-box {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            border: 1px solid #c9a96e;
+            border-radius: 0.75rem;
+            padding: 0.5rem;
+            min-width: 70px;
+            text-align: center;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+        }
+
+        .countdown-number {
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 1.2;
+            color: #c9a96e;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .countdown-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #94a3b8;
+        }
+
+        @media (min-width: 640px) {
+            .countdown-box {
+                min-width: 90px;
+                padding: 0.75rem;
+            }
+
+            .countdown-number {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-slate-900 text-slate-100">
+    <main class="container mx-auto px-4 py-12 max-w-3xl">
+        <!-- Cabecera con logo y título -->
+        <div class="text-center mb-8">
+            <span class="text-amber-400 text-4xl mb-4 block">♫</span>
+            <h1 class="font-serif text-4xl md:text-5xl font-bold mb-2">Bajo el Acorde del Tiempo</h1>
+            <p class="text-xl text-amber-400">Círculo de Primeros Lectores</p>
+        </div>
+
+        <!-- Mensaje de bienvenida y fecha de lanzamiento -->
+        <div class="bg-slate-800/50 p-6 rounded-xl border border-amber-500/30 mb-8">
+            <p class="text-lg mb-4">Gracias por ser parte de este grupo exclusivo. Has recibido un ejemplar físico antes
+                que nadie. Ahora, ayúdanos a que esta historia llegue lejos: <strong class="text-amber-400">tu reseña en
+                    Amazon es la llave</strong>.</p>
+            <p class="font-semibold text-amber-400">Queremos que tu opinión sea la primera en aparecer el día del
+                lanzamiento.</p>
+            <div class="mt-4 text-center">
+                <p class="text-sm text-slate-300">📅 <span class="font-bold">Lanzamiento oficial:</span> <span
+                        class="text-amber-400 text-xl font-serif">27 de abril de 2026</span></p>
+            </div>
+        </div>
+
+        <!-- CONTADOR REGRESIVO -->
+        <div
+            class="bg-gradient-to-r from-slate-800 to-slate-900 p-6 rounded-xl border border-amber-500/50 mb-8 text-center">
+            <p class="text-lg font-serif mb-3">Tiempo para el lanzamiento</p>
+            <div id="countdown" class="flex flex-wrap justify-center gap-3 md:gap-4">
+                <!-- Se llenará con JavaScript -->
+            </div>
+            <p class="text-xs text-slate-400 mt-3">Cuando el contador llegue a cero, el libro estará disponible en
+                Amazon.</p>
+        </div>
+
+        <!-- Formulario de captura de datos -->
+        <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700 mb-8">
+            <h2 class="font-serif text-2xl font-bold mb-4 gold">Mantente informado</h2>
+            <p class="mb-4">Déjanos tu nombre y correo para recibir un recordatorio el día del lanzamiento con el enlace
+                directo a Amazon.</p>
+            <form id="vipForm" action="https://formsubmit.co/contacto.sdg.author@gmail.com" method="POST">
+                <!-- Configuración FormSubmit (igual que en tu sitio) -->
+                <input type="hidden" name="_subject" value="Nuevo registro VIP - Primeros Lectores">
+                <input type="hidden" name="_next" value="https://www.bajoelacordedeltiempo.com/gracias-vip.html">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" name="_honey" style="display:none">
+
+                <div class="mb-4">
+                    <label class="block text-sm font-medium mb-1">Nombre </label>
+                    <input type="text" name="nombre"
+                        class="w-full px-4 py-2 bg-slate-700 border border-slate-600 rounded-lg focus:border-amber-500 focus:outline-none">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-sm font-medium mb-1">Correo electrónico <span
+                            class="text-amber-400">*</span></label>
+                    <input type="email" name="email" required
+                        class="w-full px-4 py-2 bg-slate-700 border border-slate-600 rounded-lg focus:border-amber-500 focus:outline-none">
+                </div>
+                <button type="submit"
+                    class="w-full bg-amber-500 text-slate-900 py-3 rounded-lg font-semibold hover:bg-amber-400 transition">Quiero
+                    el recordatorio</button>
+                <p class="text-xs text-slate-500 mt-2 text-center">Tus datos solo se usarán para este fin.</p>
+            </form>
+        </div>
+
+        <!-- Instrucciones detalladas para reseñar en Amazon -->
+        <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700">
+            <h2 class="font-serif text-2xl font-bold mb-4 gold">Cómo dejar tu reseña en Amazon (paso a paso)</h2>
+
+            <div class="space-y-6">
+                <!-- Paso 1: esperar fecha -->
+                <div class="flex gap-4">
+                    <span
+                        class="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500/20 border border-amber-400 flex items-center justify-center font-bold text-amber-400">1</span>
+                    <div>
+                        <h3 class="font-semibold text-lg">Espera el 27 de abril de 2026</h3>
+                        <p>El libro estará disponible en Amazon a partir de esa fecha. Marca este día en tu calendario.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Paso 2: comprar en Amazon (precio especial) -->
+                <div class="flex gap-4">
+                    <span
+                        class="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500/20 border border-amber-400 flex items-center justify-center font-bold text-amber-400">2</span>
+                    <div>
+                        <h3 class="font-semibold text-lg">Compra el libro en Amazon</h3>
+                        <p>Para que tu reseña tenga la insignia de <span
+                                class="bg-green-600/20 text-green-300 px-2 py-0.5 rounded text-sm">Compra
+                                verificada</span> (lo que más ayuda al algoritmo), <strong class="text-amber-400">debes
+                                adquirir el libro a través de Amazon</strong>. No importa si ya tienes el ejemplar
+                            físico; la compra digital es válida para la reseña.</p>
+                        <p class="mt-2 text-sm">✅ <strong>Precio especial de lanzamiento</strong> – La versión digital
+                            estará muy económica (mucho más barata que la física) por tiempo limitado. Así que podrás
+                            comprarla sin problema.</p>
+                        <ul class="list-disc list-inside mt-2 text-slate-300 text-sm">
+                            <li>El día del lanzamiento, ve a la página del libro en Amazon (el enlace te lo enviaremos
+                                por correo).</li>
+                            <li>Haz clic en "Comprar ahora" o "Compra con 1-Clic".</li>
+                            <li>Confirma la compra (verás el precio especial).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Paso 3: leer (si no lo has hecho) -->
+                <div class="flex gap-4">
+                    <span
+                        class="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500/20 border border-amber-400 flex items-center justify-center font-bold text-amber-400">3</span>
+                    <div>
+                        <h3 class="font-semibold text-lg">Lee el libro (si aún no lo has hecho)</h3>
+                        <p>Ya tienes el ejemplar físico, así que puedes leerlo con calma. La compra en Amazon es solo un
+                            trámite para la reseña verificada.</p>
+                    </div>
+                </div>
+
+                <!-- Paso 4: publicar reseña -->
+                <div class="flex gap-4">
+                    <span
+                        class="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500/20 border border-amber-400 flex items-center justify-center font-bold text-amber-400">4</span>
+                    <div>
+                        <h3 class="font-semibold text-lg">Publica tu reseña</h3>
+                        <p>Una vez que hayas comprado el libro (paso 2) y lo hayas leído (o al menos tengas una
+                            opinión):</p>
+                        <ol class="list-decimal list-inside mt-2 text-slate-300 text-sm space-y-1">
+                            <li>Ve a la página del libro en Amazon (el mismo enlace).</li>
+                            <li>Desplázate hacia abajo hasta la sección "Opiniones de clientes".</li>
+                            <li>Haz clic en "Escribir una reseña".</li>
+                            <li>Califica de 1 a 5 estrellas y escribe tu opinión honesta.</li>
+                            <li>Haz clic en "Enviar".</li>
+                        </ol>
+                        <p class="mt-2 text-sm text-amber-400">¡Listo! Tu reseña aparecerá en Amazon y ayudará a que
+                            otros lectores descubran el libro.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Consejo adicional -->
+            <div class="mt-8 p-4 bg-amber-500/10 border border-amber-500/30 rounded-lg">
+                <p class="text-sm"><span class="font-bold text-amber-400">Consejo importante:</span> Tu reseña debe ser
+                    honesta y original. Amazon penaliza las reseñas falsas. Si compraste el libro digital, asegúrate de
+                    estar conectado a la misma cuenta de Amazon con la que lo compraste.</p>
+            </div>
+        </div>
+
+        <!-- Contacto -->
+        <div class="text-center mt-8 text-slate-400">
+            <p>¿Tienes dudas? Escríbenos a <a href="mailto:contacto.sdg.author@gmail.com"
+                    class="text-amber-400 underline">contacto.sdg.author@gmail.com</a></p>
+        </div>
+    </main>
+
+    <!-- Footer mínimo -->
+    <footer class="border-t border-slate-800 mt-12 py-6 text-center text-slate-500 text-sm">
+        <p>© 2026 Sánchez Diego Gabriel · Bajo el Acorde del Tiempo</p>
+    </footer>
+
+    <!-- Script para el contador regresivo -->
+    <script>
+        (function () {
+            // Fecha de lanzamiento: 27 de abril de 2026 (ajustar hora si es necesario, por ejemplo 00:00)
+            const launchDate = new Date(2026, 3, 27, 0, 0, 0).getTime(); // Abril es mes 3 (0-index)
+
+            function updateCountdown() {
+                const now = new Date().getTime();
+                const distance = launchDate - now;
+
+                const countdownEl = document.getElementById('countdown');
+                if (!countdownEl) return;
+
+                // Si ya pasó la fecha
+                if (distance < 0) {
+                    countdownEl.innerHTML = `
+                        <div class="countdown-box">
+                            <div class="countdown-number">¡YA</div>
+                            <div class="countdown-label">DISPONIBLE!</div>
+                        </div>
+                    `;
+                    return;
+                }
+
+                // Cálculos
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Construir HTML
+                countdownEl.innerHTML = `
+                    <div class="countdown-box">
+                        <div class="countdown-number">${days}</div>
+                        <div class="countdown-label">Días</div>
+                    </div>
+                    <div class="countdown-box">
+                        <div class="countdown-number">${hours}</div>
+                        <div class="countdown-label">Horas</div>
+                    </div>
+                    <div class="countdown-box">
+                        <div class="countdown-number">${minutes}</div>
+                        <div class="countdown-label">Minutos</div>
+                    </div>
+                    <div class="countdown-box">
+                        <div class="countdown-number">${seconds}</div>
+                        <div class="countdown-label">Segundos</div>
+                    </div>
+                `;
+            }
+
+            // Actualizar cada segundo
+            updateCountdown();
+            setInterval(updateCountdown, 1000);
+        })();
+    </script>
+
+    <!-- Script opcional para el formulario (si quieres personalizar algo) -->
+    <script>
+        document.getElementById('vipForm')?.addEventListener('submit', function (e) {
+            // Opcional: podrías añadir un mensaje de "enviando..."
+            // Pero lo dejamos así para que FormSubmit funcione normalmente.
+        });
+    </script>
+</body>
+
+</html>
