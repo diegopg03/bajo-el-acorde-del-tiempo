@@ -105,38 +105,8 @@
                 Amazon.</p>
         </div>
 
-        <!-- Formulario de captura de datos -->
-        <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700 mb-8">
-            <h2 class="font-serif text-2xl font-bold mb-4 gold">Mantente informado</h2>
-            <p class="mb-4">Déjanos tu nombre y correo para recibir un recordatorio el día del lanzamiento con el enlace
-                directo a Amazon.</p>
-            <form id="vipForm" action="https://formsubmit.co/contacto.sdg.author@gmail.com" method="POST">
-                <!-- Configuración FormSubmit (igual que en tu sitio) -->
-                <input type="hidden" name="_subject" value="Nuevo registro VIP - Primeros Lectores">
-                <input type="hidden" name="_next" value="https://www.bajoelacordedeltiempo.com/gracias-vip.html">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="text" name="_honey" style="display:none">
-
-                <div class="mb-4">
-                    <label class="block text-sm font-medium mb-1">Nombre </label>
-                    <input type="text" name="nombre"
-                        class="w-full px-4 py-2 bg-slate-700 border border-slate-600 rounded-lg focus:border-amber-500 focus:outline-none">
-                </div>
-                <div class="mb-4">
-                    <label class="block text-sm font-medium mb-1">Correo electrónico <span
-                            class="text-amber-400">*</span></label>
-                    <input type="email" name="email" required
-                        class="w-full px-4 py-2 bg-slate-700 border border-slate-600 rounded-lg focus:border-amber-500 focus:outline-none">
-                </div>
-                <button type="submit"
-                    class="w-full bg-amber-500 text-slate-900 py-3 rounded-lg font-semibold hover:bg-amber-400 transition">Quiero
-                    el recordatorio</button>
-                <p class="text-xs text-slate-500 mt-2 text-center">Tus datos solo se usarán para este fin.</p>
-            </form>
-        </div>
-
         <!-- Instrucciones detalladas para reseñar en Amazon -->
-        <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700">
+        <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700 mb-8">
             <h2 class="font-serif text-2xl font-bold mb-4 gold">Cómo dejar tu reseña en Amazon (paso a paso)</h2>
 
             <div class="space-y-6">
@@ -214,6 +184,37 @@
             </div>
         </div>
 
+        <!-- Formulario de captura de datos (AHORA DESPUÉS DE LAS INSTRUCCIONES) -->
+        <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700 mb-8">
+            <h2 class="font-serif text-2xl font-bold mb-4 gold">¿Listo para ayudar?</h2>
+            <p class="mb-4">Ahora que conoces los pasos, déjanos tu nombre y correo para recibir un recordatorio el día
+                del lanzamiento con el enlace directo a Amazon. Así no perderás ningún detalle.</p>
+            <form id="vipForm" action="https://formsubmit.co/contacto.sdg.author@gmail.com" method="POST">
+                <!-- Configuración FormSubmit (igual que en tu sitio) -->
+                <input type="hidden" name="_subject" value="Nuevo registro VIP - Primeros Lectores">
+                <input type="hidden" name="_next"
+                    value="https://diegopg03.github.io/bajo-el-acorde-del-tiempo/gracias-vip.html">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" name="_honey" style="display:none">
+
+                <div class="mb-4">
+                    <label class="block text-sm font-medium mb-1">Nombre</label>
+                    <input type="text" name="nombre"
+                        class="w-full px-4 py-2 bg-slate-700 border border-slate-600 rounded-lg focus:border-amber-500 focus:outline-none">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-sm font-medium mb-1">Correo electrónico <span
+                            class="text-amber-400">*</span></label>
+                    <input type="email" name="email" required
+                        class="w-full px-4 py-2 bg-slate-700 border border-slate-600 rounded-lg focus:border-amber-500 focus:outline-none">
+                </div>
+                <button type="submit"
+                    class="w-full bg-amber-500 text-slate-900 py-3 rounded-lg font-semibold hover:bg-amber-400 transition">Quiero
+                    el recordatorio</button>
+                <p class="text-xs text-slate-500 mt-2 text-center">Tus datos solo se usarán para este fin.</p>
+            </form>
+        </div>
+
         <!-- Contacto -->
         <div class="text-center mt-8 text-slate-400">
             <p>¿Tienes dudas? Escríbenos a <a href="mailto:contacto.sdg.author@gmail.com"
@@ -229,17 +230,15 @@
     <!-- Script para el contador regresivo -->
     <script>
         (function () {
-            // Fecha de lanzamiento: 27 de abril de 2026 (ajustar hora si es necesario, por ejemplo 00:00)
-            const launchDate = new Date(2026, 3, 27, 0, 0, 0).getTime(); // Abril es mes 3 (0-index)
+            // Fecha de lanzamiento: 27 de abril de 2026
+            const launchDate = new Date(2026, 3, 27, 0, 0, 0).getTime(); // Abril es mes 3
 
             function updateCountdown() {
                 const now = new Date().getTime();
                 const distance = launchDate - now;
-
                 const countdownEl = document.getElementById('countdown');
                 if (!countdownEl) return;
 
-                // Si ya pasó la fecha
                 if (distance < 0) {
                     countdownEl.innerHTML = `
                         <div class="countdown-box">
@@ -250,13 +249,11 @@
                     return;
                 }
 
-                // Cálculos
                 const days = Math.floor(distance / (1000 * 60 * 60 * 24));
                 const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                 const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
                 const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-                // Construir HTML
                 countdownEl.innerHTML = `
                     <div class="countdown-box">
                         <div class="countdown-number">${days}</div>
@@ -277,18 +274,9 @@
                 `;
             }
 
-            // Actualizar cada segundo
             updateCountdown();
             setInterval(updateCountdown, 1000);
         })();
-    </script>
-
-    <!-- Script opcional para el formulario (si quieres personalizar algo) -->
-    <script>
-        document.getElementById('vipForm')?.addEventListener('submit', function (e) {
-            // Opcional: podrías añadir un mensaje de "enviando..."
-            // Pero lo dejamos así para que FormSubmit funcione normalmente.
-        });
     </script>
 </body>
 
